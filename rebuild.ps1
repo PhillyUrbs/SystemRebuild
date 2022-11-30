@@ -21,6 +21,11 @@ $apps = {
     "Prusa3D.PrusaSlicer",
     "PuTTY.PuTTY",
     "SlackTechnologies.Slack",
-    "TechSmith.SnagIt.2023"
+    "TechSmith.SnagIt.2022", #Look for 2023 upgrade
     "Valve.Steam"
+}
+
+foreach ($app in $apps)
+{
+    winget install $app        
 }
