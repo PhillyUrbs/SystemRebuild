@@ -1,11 +1,7 @@
-<#
-Leftovers
-    Yealink USB Connect
-    Razer Synapse
-    Battle.net Launcher
-#>
 
-$apps = {
+
+# Define the array of winget applications to be installed
+$wingetApps = @(
     "7zip.7zip",
     "Corsair.iCUE.4",
     "CreativeTechnology.CreativeApp",
@@ -24,9 +20,21 @@ $apps = {
     "SlackTechnologies.Slack",
     "TechSmith.SnagIt.2022", #Look for 2023 upgrade
     "Valve.Steam"
-}
+)
 
-foreach ($app in $apps)
-{
-    winget install $app        
+<#
+Leftovers
+    Yealink USB Connect
+    Razer Synapse
+    Battle.net Launcher
+#>
+
+# Iterate through the array and install each winget application
+foreach ($wingetApp in $wingetApps) {
+    try {
+        winget install $wingetApp | Out-Null
+        Write-Output "$wingetApp installed successfully"
+    } catch [System.Management.Automation.ActionPreferenceStopException] {
+        Write-Error "Error installing $wingetApp: $($_.Exception.Message)"
+    }
 }
