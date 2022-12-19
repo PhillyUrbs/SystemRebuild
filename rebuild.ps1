@@ -18,7 +18,7 @@ $wingetApps = @(
     "Prusa3D.PrusaSlicer",
     "PuTTY.PuTTY",
     "SlackTechnologies.Slack",
-    "TechSmith.SnagIt.2022", #Look for 2023 upgrade
+    "TechSmith.SnagIt.2023",
     "Valve.Steam"
 )
 
