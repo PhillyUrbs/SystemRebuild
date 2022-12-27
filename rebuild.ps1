@@ -3,7 +3,6 @@
 # Define the array of winget applications to be installed
 $wingetApps = @(
     "7zip.7zip",
-    "Corsair.iCUE.4",
     "CreativeTechnology.CreativeApp",
     "Discord.Discord",
     "ElectronicArts.EADesktop",
@@ -39,3 +38,15 @@ foreach ($wingetApp in $wingetApps) {
         Write-Error "Error installing $wingetApp: $($_.Exception.Message)"
     }
 }
+
+# Remove Razer Game Manager Service as a Depenant service of Razer Synapse Service
+reg import "./Razer.reg"
+
+<#
+#stop and disable Razer Game Manager Service
+# REQUIRES REBOOT
+net stop "Razer Synapse Service"
+net stop "Razer Game Manager Service"
+sc.exe config "Razer Game Manager Service" start= disabled
+net start "Razer Synapse Service"
+#>
