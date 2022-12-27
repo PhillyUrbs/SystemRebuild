@@ -7,6 +7,7 @@ $wingetApps = @(
     "Discord.Discord",
     "ElectronicArts.EADesktop",
     "EpicGames.EpicGamesLauncher",
+    "Git.Git",
     "GOG.Galaxy",
     "Microsoft.BingWallpaper",
     "Microsoft.Office",
@@ -35,7 +36,7 @@ foreach ($wingetApp in $wingetApps) {
         winget install $wingetApp | Out-Null
         Write-Output "$wingetApp installed successfully"
     } catch [System.Management.Automation.ActionPreferenceStopException] {
-        Write-Error "Error installing $wingetApp: $($_.Exception.Message)"
+        Write-Error "Error installing $wingetApp - $($_.Exception.Message)"
     }
 }
 
