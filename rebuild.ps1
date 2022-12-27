@@ -7,6 +7,7 @@ $wingetApps = @(
     "CreativeTechnology.CreativeApp",
     "Discord.Discord",
     "ElectronicArts.EADesktop",
+    "EpicGames.EpicGamesLauncher",
     "GOG.Galaxy",
     "Microsoft.BingWallpaper",
     "Microsoft.Office",
