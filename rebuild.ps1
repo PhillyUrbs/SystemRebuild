@@ -17,7 +17,6 @@ $wingetApps = @(
     "OpenWhisperSystems.Signal",
     "Plex.Plex",
     "Prusa3D.PrusaSlicer",
-    "PuTTY.PuTTY",
     "SlackTechnologies.Slack",
     "TechSmith.SnagIt.2023",
     "Valve.Steam"
