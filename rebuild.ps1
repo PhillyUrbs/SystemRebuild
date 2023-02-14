@@ -20,7 +20,7 @@ $wingetApps = @(
     "SlackTechnologies.Slack",
     "TechSmith.SnagIt.2023",
     "Valve.Steam", 
-    "9n4wgh0z6vhq" # Win11 HEVC Encoding
+    "9N4WGH0Z6VHQ" # Win11 HEVC Encoding
 )
 
 <#
