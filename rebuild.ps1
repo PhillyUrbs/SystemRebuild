@@ -19,7 +19,8 @@ $wingetApps = @(
     "Prusa3D.PrusaSlicer",
     "SlackTechnologies.Slack",
     "TechSmith.SnagIt.2023",
-    "Valve.Steam"
+    "Valve.Steam", 
+    "9n4wgh0z6vhq" # Win11 HEVC Encoding
 )
 
 <#
@@ -32,7 +33,7 @@ Leftovers
 # Iterate through the array and install each winget application
 foreach ($wingetApp in $wingetApps) {
     try {
-        winget install $wingetApp | Out-Null
+        winget install $wingetApp
         Write-Output "$wingetApp installed successfully"
     } catch [System.Management.Automation.ActionPreferenceStopException] {
         Write-Error "Error installing $wingetApp - $($_.Exception.Message)"
@@ -40,7 +41,7 @@ foreach ($wingetApp in $wingetApps) {
 }
 
 # Remove Razer Game Manager Service as a Depenant service of Razer Synapse Service
-reg import "./Razer.reg"
+# reg import "./Razer.reg"
 
 <#
 #stop and disable Razer Game Manager Service
