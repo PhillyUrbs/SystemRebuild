@@ -11,7 +11,7 @@ $wingetApps = @(
     "GOG.Galaxy",
     "Microsoft.BingWallpaper",
     "Microsoft.Office",
-    "Microsoft.Teams",
+    #"Microsoft.Teams",
     "Microsoft.VisualStudioCode",
     "Nvidia.GeForceExperience",
     "OpenWhisperSystems.Signal",
