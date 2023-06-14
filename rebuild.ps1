@@ -12,7 +12,7 @@ $wingetApps = @(
     "Microsoft.BingWallpaper",
     "Microsoft.Office",
     #"Microsoft.Teams",
-    "Microsoft.VisualStudioCode.Insider",
+    "Microsoft.VisualStudioCode.Insiders",
     "Nvidia.GeForceExperience",
     #"OpenWhisperSystems.Signal",
     "Plex.Plex",
