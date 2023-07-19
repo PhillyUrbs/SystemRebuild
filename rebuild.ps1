@@ -3,6 +3,7 @@
 # Define the array of winget applications to be installed
 $wingetApps = @(
     #"7zip.7zip",
+    "Almico.SpeedFan",
     "CreativeTechnology.CreativeApp",
     "Discord.Discord",
     "ElectronicArts.EADesktop",
