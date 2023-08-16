@@ -2,8 +2,6 @@
 
 # Define the array of winget applications to be installed
 $wingetApps = @(
-    #"7zip.7zip",
-    "Almico.SpeedFan",
     "CreativeTechnology.CreativeApp",
     "Discord.Discord",
     "ElectronicArts.EADesktop",
@@ -12,14 +10,11 @@ $wingetApps = @(
     "GOG.Galaxy",
     "Microsoft.BingWallpaper",
     "Microsoft.Office",
-    #"Microsoft.Teams",
     "Microsoft.VisualStudioCode.Insiders",
     "Nvidia.GeForceExperience",
-    #"OpenWhisperSystems.Signal",
     "Plex.Plex",
     "Prusa3D.PrusaSlicer",
     "SlackTechnologies.Slack",
-    #"TechSmith.SnagIt.2023",
     "Valve.Steam", 
     "9N4WGH0Z6VHQ", # Win11 HEVC Encoding
     "9P1HQ5TQZMGD", # Microsoft Loop
@@ -32,6 +27,7 @@ Leftovers
     Yealink USB Connect
     Razer Synapse
     Battle.net Launcher
+    FanControl https://getfancontrol.com/
 #>
 
 # Iterate through the array and install each winget application
