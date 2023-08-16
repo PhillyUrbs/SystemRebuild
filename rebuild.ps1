@@ -19,7 +19,7 @@ $wingetApps = @(
     "Plex.Plex",
     "Prusa3D.PrusaSlicer",
     "SlackTechnologies.Slack",
-    "TechSmith.SnagIt.2023",
+    #"TechSmith.SnagIt.2023",
     "Valve.Steam", 
     "9N4WGH0Z6VHQ", # Win11 HEVC Encoding
     "9P1HQ5TQZMGD", # Microsoft Loop
