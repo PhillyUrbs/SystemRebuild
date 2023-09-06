@@ -1,237 +1,22 @@
 {
-  "__VERSION__": "167",
+  "__VERSION__": "168",
   "Main": {
     "Controls": [
       {
         "Enable": true,
         "ForceApply": false,
-        "Identifier": "/lpc/nct6687d/control/0",
+        "Identifier": "/lpc/nct6798d/control/0",
         "IsHidden": false,
         "ManualControl": false,
         "ManualControlValue": 50,
         "MatchingFanSensor": {
-          "Identifier": "/lpc/nct6687d/fan/0",
+          "Identifier": "/lpc/nct6798d/fan/0",
           "IsHidden": false,
-          "Name": "CPU Fan",
-          "NickName": "CPU Fan"
+          "Name": "Fan #1",
+          "NickName": "Fan #1"
         },
         "MinimumPercent": 0,
-        "Name": "CPU Fan",
-        "NickName": "CPU Fan",
-        "SelectedCommandStepDown": 8.0,
-        "SelectedCommandStepUp": 8.0,
-        "SelectedFanCurve": {
-          "Deadband": 5.0,
-          "IdleTemperature": 55.0,
-          "IsHidden": false,
-          "LoadTemperature": 90.0,
-          "MaxFanSpeed": 100,
-          "MinFanSpeed": 20,
-          "Name": "Auto CPU",
-          "SelectedResponseTime": 10,
-          "SelectedTempSource": {
-            "Identifier": "Time/CPU Average over 10 Seconds",
-            "IsHidden": false,
-            "Name": "CPU Average over 10 Seconds",
-            "SelectedTempSource": {
-              "Identifier": "Mix/Mix CPU Core Average",
-              "IsHidden": false,
-              "Name": "Mix CPU Core Average",
-              "SelectedMixFunction": 0,
-              "SelectedSensors": [
-                {
-                  "Identifier": "/intelcpu/0/temperature/0",
-                  "IsHidden": false,
-                  "Name": "CPU Core #1",
-                  "NickName": "CPU Core #1"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/1",
-                  "IsHidden": false,
-                  "Name": "CPU Core #2",
-                  "NickName": "CPU Core #2"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/2",
-                  "IsHidden": false,
-                  "Name": "CPU Core #3",
-                  "NickName": "CPU Core #3"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/3",
-                  "IsHidden": false,
-                  "Name": "CPU Core #4",
-                  "NickName": "CPU Core #4"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/4",
-                  "IsHidden": false,
-                  "Name": "CPU Core #5",
-                  "NickName": "CPU Core #5"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/5",
-                  "IsHidden": false,
-                  "Name": "CPU Core #6",
-                  "NickName": "CPU Core #6"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/6",
-                  "IsHidden": false,
-                  "Name": "CPU Core #7",
-                  "NickName": "CPU Core #7"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/7",
-                  "IsHidden": false,
-                  "Name": "CPU Core #8",
-                  "NickName": "CPU Core #8"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/8",
-                  "IsHidden": false,
-                  "Name": "CPU Core #9",
-                  "NickName": "CPU Core #9"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/9",
-                  "IsHidden": false,
-                  "Name": "CPU Core #10",
-                  "NickName": "CPU Core #10"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/10",
-                  "IsHidden": false,
-                  "Name": "CPU Core #11",
-                  "NickName": "CPU Core #11"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/11",
-                  "IsHidden": false,
-                  "Name": "CPU Core #12",
-                  "NickName": "CPU Core #12"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/12",
-                  "IsHidden": false,
-                  "Name": "CPU Core #13",
-                  "NickName": "CPU Core #13"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/13",
-                  "IsHidden": false,
-                  "Name": "CPU Core #14",
-                  "NickName": "CPU Core #14"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/14",
-                  "IsHidden": false,
-                  "Name": "CPU Core #15",
-                  "NickName": "CPU Core #15"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/15",
-                  "IsHidden": false,
-                  "Name": "CPU Core #16",
-                  "NickName": "CPU Core #16"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/16",
-                  "IsHidden": false,
-                  "Name": "CPU Core #17",
-                  "NickName": "CPU Core #17"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/17",
-                  "IsHidden": false,
-                  "Name": "CPU Core #18",
-                  "NickName": "CPU Core #18"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/18",
-                  "IsHidden": false,
-                  "Name": "CPU Core #19",
-                  "NickName": "CPU Core #19"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/19",
-                  "IsHidden": false,
-                  "Name": "CPU Core #20",
-                  "NickName": "CPU Core #20"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/20",
-                  "IsHidden": false,
-                  "Name": "CPU Core #21",
-                  "NickName": "CPU Core #21"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/21",
-                  "IsHidden": false,
-                  "Name": "CPU Core #22",
-                  "NickName": "CPU Core #22"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/22",
-                  "IsHidden": false,
-                  "Name": "CPU Core #23",
-                  "NickName": "CPU Core #23"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/23",
-                  "IsHidden": false,
-                  "Name": "CPU Core #24",
-                  "NickName": "CPU Core #24"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/24",
-                  "IsHidden": false,
-                  "Name": "CPU Package",
-                  "NickName": "CPU Package"
-                }
-              ]
-            },
-            "SelectedTime": 10
-          },
-          "Step": 2.0
-        },
-        "SelectedOffset": 0,
-        "SelectedStart": 24,
-        "SelectedStop": 21
-      },
-      {
-        "Enable": false,
-        "ForceApply": false,
-        "Identifier": "/lpc/nct6687d/control/1",
-        "IsHidden": true,
-        "ManualControl": false,
-        "ManualControlValue": 50,
-        "MatchingFanSensor": null,
-        "MinimumPercent": 0,
-        "Name": "Pump Fan",
-        "NickName": "Pump Fan",
-        "SelectedCommandStepDown": 8.0,
-        "SelectedCommandStepUp": 8.0,
-        "SelectedFanCurve": null,
-        "SelectedOffset": 0,
-        "SelectedStart": 0,
-        "SelectedStop": 0
-      },
-      {
-        "Enable": true,
-        "ForceApply": false,
-        "Identifier": "/lpc/nct6687d/control/2",
-        "IsHidden": false,
-        "ManualControl": false,
-        "ManualControlValue": 50,
-        "MatchingFanSensor": {
-          "Identifier": "/lpc/nct6687d/fan/2",
-          "IsHidden": false,
-          "Name": "System Fan #1",
-          "NickName": "Case Back"
-        },
-        "MinimumPercent": 0,
-        "Name": "System Fan #1",
+        "Name": "Fan #1",
         "NickName": "Case Back",
         "SelectedCommandStepDown": 8.0,
         "SelectedCommandStepUp": 8.0,
@@ -441,292 +226,177 @@
           "SelectedMixFunction": 0
         },
         "SelectedOffset": 0,
-        "SelectedStart": 9,
-        "SelectedStop": 9
+        "SelectedStart": 0,
+        "SelectedStop": 0
       },
       {
         "Enable": true,
         "ForceApply": false,
-        "Identifier": "/lpc/nct6687d/control/3",
+        "Identifier": "/lpc/nct6798d/control/1",
         "IsHidden": false,
         "ManualControl": false,
         "ManualControlValue": 50,
         "MatchingFanSensor": {
-          "Identifier": "/lpc/nct6687d/fan/3",
+          "Identifier": "/lpc/nct6798d/fan/1",
           "IsHidden": false,
-          "Name": "System Fan #2",
-          "NickName": "Case Front Top"
+          "Name": "Fan #2",
+          "NickName": "Fan #2"
         },
         "MinimumPercent": 0,
-        "Name": "System Fan #2",
-        "NickName": "Case Front Top",
+        "Name": "Fan #2",
+        "NickName": "CPU Fans",
         "SelectedCommandStepDown": 8.0,
         "SelectedCommandStepUp": 8.0,
         "SelectedFanCurve": {
-          "Deadband": 5.0,
-          "IdleTemperature": 55.0,
           "IsHidden": false,
-          "LoadTemperature": 90.0,
-          "MaxFanSpeed": 45,
-          "MinFanSpeed": 10,
-          "Name": "Auto CPU Case",
-          "SelectedResponseTime": 10,
+          "MaximumTemperature": 120,
+          "MinimumTemperature": 20,
+          "Name": "CPU Curve",
+          "OneWayHysteresis": false,
+          "Points": [
+            "65,35",
+            "90,95"
+          ],
+          "SelectedHysteresis": 5.0,
+          "SelectedResponseTime": 5,
           "SelectedTempSource": {
-            "Identifier": "Time/CPU Average over 10 Seconds",
+            "Identifier": "/intelcpu/0/temperature/24",
             "IsHidden": false,
-            "Name": "CPU Average over 10 Seconds",
-            "SelectedTempSource": {
-              "Identifier": "Mix/Mix CPU Core Average",
-              "IsHidden": false,
-              "Name": "Mix CPU Core Average",
-              "SelectedMixFunction": 0,
-              "SelectedSensors": [
-                {
-                  "Identifier": "/intelcpu/0/temperature/0",
-                  "IsHidden": false,
-                  "Name": "CPU Core #1",
-                  "NickName": "CPU Core #1"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/1",
-                  "IsHidden": false,
-                  "Name": "CPU Core #2",
-                  "NickName": "CPU Core #2"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/2",
-                  "IsHidden": false,
-                  "Name": "CPU Core #3",
-                  "NickName": "CPU Core #3"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/3",
-                  "IsHidden": false,
-                  "Name": "CPU Core #4",
-                  "NickName": "CPU Core #4"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/4",
-                  "IsHidden": false,
-                  "Name": "CPU Core #5",
-                  "NickName": "CPU Core #5"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/5",
-                  "IsHidden": false,
-                  "Name": "CPU Core #6",
-                  "NickName": "CPU Core #6"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/6",
-                  "IsHidden": false,
-                  "Name": "CPU Core #7",
-                  "NickName": "CPU Core #7"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/7",
-                  "IsHidden": false,
-                  "Name": "CPU Core #8",
-                  "NickName": "CPU Core #8"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/8",
-                  "IsHidden": false,
-                  "Name": "CPU Core #9",
-                  "NickName": "CPU Core #9"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/9",
-                  "IsHidden": false,
-                  "Name": "CPU Core #10",
-                  "NickName": "CPU Core #10"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/10",
-                  "IsHidden": false,
-                  "Name": "CPU Core #11",
-                  "NickName": "CPU Core #11"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/11",
-                  "IsHidden": false,
-                  "Name": "CPU Core #12",
-                  "NickName": "CPU Core #12"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/12",
-                  "IsHidden": false,
-                  "Name": "CPU Core #13",
-                  "NickName": "CPU Core #13"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/13",
-                  "IsHidden": false,
-                  "Name": "CPU Core #14",
-                  "NickName": "CPU Core #14"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/14",
-                  "IsHidden": false,
-                  "Name": "CPU Core #15",
-                  "NickName": "CPU Core #15"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/15",
-                  "IsHidden": false,
-                  "Name": "CPU Core #16",
-                  "NickName": "CPU Core #16"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/16",
-                  "IsHidden": false,
-                  "Name": "CPU Core #17",
-                  "NickName": "CPU Core #17"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/17",
-                  "IsHidden": false,
-                  "Name": "CPU Core #18",
-                  "NickName": "CPU Core #18"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/18",
-                  "IsHidden": false,
-                  "Name": "CPU Core #19",
-                  "NickName": "CPU Core #19"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/19",
-                  "IsHidden": false,
-                  "Name": "CPU Core #20",
-                  "NickName": "CPU Core #20"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/20",
-                  "IsHidden": false,
-                  "Name": "CPU Core #21",
-                  "NickName": "CPU Core #21"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/21",
-                  "IsHidden": false,
-                  "Name": "CPU Core #22",
-                  "NickName": "CPU Core #22"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/22",
-                  "IsHidden": false,
-                  "Name": "CPU Core #23",
-                  "NickName": "CPU Core #23"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/23",
-                  "IsHidden": false,
-                  "Name": "CPU Core #24",
-                  "NickName": "CPU Core #24"
-                },
-                {
-                  "Identifier": "/intelcpu/0/temperature/24",
-                  "IsHidden": false,
-                  "Name": "CPU Package",
-                  "NickName": "CPU Package"
-                }
-              ]
-            },
-            "SelectedTime": 10
-          },
-          "Step": 2.0
+            "Name": "CPU Package",
+            "NickName": "CPU Package"
+          }
         },
         "SelectedOffset": 0,
-        "SelectedStart": 9,
-        "SelectedStop": 9
+        "SelectedStart": 0,
+        "SelectedStop": 0
       },
       {
-        "Enable": true,
+        "Enable": false,
         "ForceApply": false,
-        "Identifier": "/lpc/nct6687d/control/4",
+        "Identifier": "/lpc/nct6798d/control/2",
         "IsHidden": false,
         "ManualControl": false,
         "ManualControlValue": 50,
         "MatchingFanSensor": {
-          "Identifier": "/lpc/nct6687d/fan/4",
+          "Identifier": "/lpc/nct6798d/fan/2",
           "IsHidden": false,
-          "Name": "System Fan #3",
-          "NickName": "Case Front Bottom"
+          "Name": "Fan #3",
+          "NickName": "Fan #3"
         },
         "MinimumPercent": 0,
-        "Name": "System Fan #3",
+        "Name": "Fan #3",
+        "NickName": "Case PSU",
+        "SelectedCommandStepDown": 8.0,
+        "SelectedCommandStepUp": 8.0,
+        "SelectedFanCurve": {
+          "IsHidden": false,
+          "Name": "0%",
+          "Percent": 0.0
+        },
+        "SelectedOffset": 0,
+        "SelectedStart": 0,
+        "SelectedStop": 0
+      },
+      {
+        "Enable": true,
+        "ForceApply": false,
+        "Identifier": "/lpc/nct6798d/control/3",
+        "IsHidden": false,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MatchingFanSensor": {
+          "Identifier": "/lpc/nct6798d/fan/3",
+          "IsHidden": false,
+          "Name": "Fan #4",
+          "NickName": "Fan #4"
+        },
+        "MinimumPercent": 0,
+        "Name": "Fan #4",
         "NickName": "Case Front Bottom",
         "SelectedCommandStepDown": 8.0,
         "SelectedCommandStepUp": 8.0,
         "SelectedFanCurve": {
-          "Deadband": 5.0,
-          "IdleTemperature": 60.0,
           "IsHidden": false,
-          "LoadTemperature": 90.0,
-          "MaxFanSpeed": 95,
-          "MinFanSpeed": 10,
-          "Name": "Auto GPU Case",
-          "SelectedResponseTime": 10,
+          "MaximumTemperature": 120,
+          "MinimumTemperature": 20,
+          "Name": "Case GPU",
+          "OneWayHysteresis": false,
+          "Points": [
+            "65,20",
+            "90,95"
+          ],
+          "SelectedHysteresis": 5.0,
+          "SelectedResponseTime": 5,
           "SelectedTempSource": {
-            "Identifier": "Time/GPU Average over 10 Seconds",
+            "Identifier": "NVApiWrapper/0-GA102-A/sensor/0",
             "IsHidden": false,
-            "Name": "GPU Average over 10 Seconds",
-            "SelectedTempSource": {
-              "Identifier": "NVApiWrapper/0-GA102-A/sensor/0",
-              "IsHidden": false,
-              "Name": "GPU",
-              "NickName": "GPU"
-            },
-            "SelectedTime": 10
-          },
-          "Step": 2.0
+            "Name": "GPU",
+            "NickName": "GPU"
+          }
         },
         "SelectedOffset": 0,
-        "SelectedStart": 9,
-        "SelectedStop": 9
+        "SelectedStart": 0,
+        "SelectedStop": 0
       },
       {
-        "Enable": true,
+        "Enable": false,
         "ForceApply": false,
-        "Identifier": "/lpc/nct6687d/control/5",
+        "Identifier": "/lpc/nct6798d/control/4",
         "IsHidden": false,
         "ManualControl": false,
         "ManualControlValue": 50,
-        "MatchingFanSensor": {
-          "Identifier": "/lpc/nct6687d/fan/5",
-          "IsHidden": false,
-          "Name": "System Fan #4",
-          "NickName": "PSU Aux"
-        },
+        "MatchingFanSensor": null,
         "MinimumPercent": 0,
-        "Name": "System Fan #4",
-        "NickName": "PSU Aux",
+        "Name": "Fan #5",
+        "NickName": "Fan #5",
         "SelectedCommandStepDown": 8.0,
         "SelectedCommandStepUp": 8.0,
         "SelectedFanCurve": {
           "IsHidden": false,
-          "Name": "PSU Aux",
-          "Percent": 25.0
+          "Name": "0%",
+          "Percent": 0.0
         },
         "SelectedOffset": 0,
-        "SelectedStart": 15,
-        "SelectedStop": 15
+        "SelectedStart": 0,
+        "SelectedStop": 0
       },
       {
-        "Enable": false,
+        "Enable": true,
         "ForceApply": false,
-        "Identifier": "/lpc/nct6687d/control/6",
-        "IsHidden": true,
+        "Identifier": "/lpc/nct6798d/control/5",
+        "IsHidden": false,
         "ManualControl": false,
         "ManualControlValue": 50,
-        "MatchingFanSensor": null,
+        "MatchingFanSensor": {
+          "Identifier": "/lpc/nct6798d/fan/5",
+          "IsHidden": false,
+          "Name": "Fan #6",
+          "NickName": "Fan #6"
+        },
         "MinimumPercent": 0,
-        "Name": "System Fan #5",
-        "NickName": "System Fan #5",
+        "Name": "Fan #6",
+        "NickName": "Case Front Top",
         "SelectedCommandStepDown": 8.0,
         "SelectedCommandStepUp": 8.0,
-        "SelectedFanCurve": null,
+        "SelectedFanCurve": {
+          "IsHidden": false,
+          "MaximumTemperature": 120,
+          "MinimumTemperature": 20,
+          "Name": "Case CPU ",
+          "OneWayHysteresis": false,
+          "Points": [
+            "65,20",
+            "90,95"
+          ],
+          "SelectedHysteresis": 5.0,
+          "SelectedResponseTime": 5,
+          "SelectedTempSource": {
+            "Identifier": "/intelcpu/0/temperature/24",
+            "IsHidden": false,
+            "Name": "CPU Package",
+            "NickName": "CPU Package"
+          }
+        },
         "SelectedOffset": 0,
         "SelectedStart": 0,
         "SelectedStop": 0
@@ -734,14 +404,14 @@
       {
         "Enable": false,
         "ForceApply": false,
-        "Identifier": "/lpc/nct6687d/control/7",
-        "IsHidden": true,
+        "Identifier": "/lpc/nct6798d/control/6",
+        "IsHidden": false,
         "ManualControl": false,
         "ManualControlValue": 50,
         "MatchingFanSensor": null,
         "MinimumPercent": 0,
-        "Name": "System Fan #6",
-        "NickName": "System Fan #6",
+        "Name": "Fan #7",
+        "NickName": "Fan #7",
         "SelectedCommandStepDown": 8.0,
         "SelectedCommandStepUp": 8.0,
         "SelectedFanCurve": null,
@@ -752,19 +422,14 @@
       {
         "Enable": true,
         "ForceApply": false,
-        "Identifier": "NVApiWrapper/0-GA102-A/control/0",
+        "Identifier": "NVApiWrapper/0-GA102-A/control/1",
         "IsHidden": false,
         "ManualControl": false,
         "ManualControlValue": 50,
-        "MatchingFanSensor": {
-          "Identifier": "NVApiWrapper/0-GA102-A/fan/0",
-          "IsHidden": false,
-          "Name": "Fan 1 - NVIDIA GeForce RTX 3080",
-          "NickName": "Control 1 - NVIDIA GeForce RTX 3080"
-        },
+        "MatchingFanSensor": null,
         "MinimumPercent": 0,
-        "Name": "Control 1 - NVIDIA GeForce RTX 3080",
-        "NickName": "Control 1 - NVIDIA GeForce RTX 3080",
+        "Name": "Control 2 - NVIDIA GeForce RTX 3080",
+        "NickName": "Control 2 - NVIDIA GeForce RTX 3080",
         "SelectedCommandStepDown": 8.0,
         "SelectedCommandStepUp": 8.0,
         "SelectedFanCurve": {
@@ -791,25 +456,25 @@
           "Step": 2.0
         },
         "SelectedOffset": 0,
-        "SelectedStart": 45,
-        "SelectedStop": 42
+        "SelectedStart": 0,
+        "SelectedStop": 0
       },
       {
         "Enable": true,
         "ForceApply": false,
-        "Identifier": "NVApiWrapper/0-GA102-A/control/1",
+        "Identifier": "NVApiWrapper/0-GA102-A/control/0",
         "IsHidden": false,
         "ManualControl": false,
         "ManualControlValue": 50,
         "MatchingFanSensor": {
-          "Identifier": "NVApiWrapper/0-GA102-A/fan/1",
+          "Identifier": "NVApiWrapper/0-GA102-A/fan/0",
           "IsHidden": false,
-          "Name": "Fan 2 - NVIDIA GeForce RTX 3080",
-          "NickName": "Control 2 - NVIDIA GeForce RTX 3080"
+          "Name": "Fan 1 - NVIDIA GeForce RTX 3080",
+          "NickName": "Control 1 - NVIDIA GeForce RTX 3080"
         },
         "MinimumPercent": 0,
-        "Name": "Control 2 - NVIDIA GeForce RTX 3080",
-        "NickName": "Control 2 - NVIDIA GeForce RTX 3080",
+        "Name": "Control 1 - NVIDIA GeForce RTX 3080",
+        "NickName": "Control 1 - NVIDIA GeForce RTX 3080",
         "SelectedCommandStepDown": 8.0,
         "SelectedCommandStepUp": 8.0,
         "SelectedFanCurve": {
@@ -1883,68 +1548,67 @@
           }
         ],
         "SelectedMixFunction": 0
+      },
+      {
+        "IsHidden": false,
+        "Name": "0%",
+        "Percent": 0.0
       }
     ],
     "FanSensors": [
       {
-        "Identifier": "/lpc/nct6687d/fan/0",
+        "Identifier": "/lpc/nct6798d/fan/0",
         "IsHidden": false,
-        "Name": "CPU Fan",
-        "NickName": "CPU Fan"
+        "Name": "Fan #1",
+        "NickName": "Fan #1"
       },
       {
-        "Identifier": "/lpc/nct6687d/fan/1",
+        "Identifier": "/lpc/nct6798d/fan/1",
         "IsHidden": false,
-        "Name": "Pump Fan",
-        "NickName": "Pump Fan"
+        "Name": "Fan #2",
+        "NickName": "Fan #2"
       },
       {
-        "Identifier": "/lpc/nct6687d/fan/2",
+        "Identifier": "/lpc/nct6798d/fan/2",
         "IsHidden": false,
-        "Name": "System Fan #1",
-        "NickName": "Case Back"
+        "Name": "Fan #3",
+        "NickName": "Fan #3"
       },
       {
-        "Identifier": "/lpc/nct6687d/fan/3",
+        "Identifier": "/lpc/nct6798d/fan/3",
         "IsHidden": false,
-        "Name": "System Fan #2",
-        "NickName": "Case Front Top"
+        "Name": "Fan #4",
+        "NickName": "Fan #4"
       },
       {
-        "Identifier": "/lpc/nct6687d/fan/4",
+        "Identifier": "/lpc/nct6798d/fan/4",
         "IsHidden": false,
-        "Name": "System Fan #3",
-        "NickName": "Case Front Bottom"
+        "Name": "Fan #5",
+        "NickName": "Fan #5"
       },
       {
-        "Identifier": "/lpc/nct6687d/fan/5",
+        "Identifier": "/lpc/nct6798d/fan/5",
         "IsHidden": false,
-        "Name": "System Fan #4",
-        "NickName": "PSU Aux"
+        "Name": "Fan #6",
+        "NickName": "Fan #6"
       },
       {
-        "Identifier": "/lpc/nct6687d/fan/6",
+        "Identifier": "/lpc/nct6798d/fan/6",
         "IsHidden": false,
-        "Name": "System Fan #5",
-        "NickName": "System Fan #5"
+        "Name": "Fan #7",
+        "NickName": "Fan #7"
       },
       {
-        "Identifier": "/lpc/nct6687d/fan/7",
+        "Identifier": "NVApiWrapper/0-GA102-A/fan/1",
         "IsHidden": false,
-        "Name": "System Fan #6",
-        "NickName": "System Fan #6"
+        "Name": "Fan 2 - NVIDIA GeForce RTX 3080",
+        "NickName": "Fan 2 - NVIDIA GeForce RTX 3080"
       },
       {
         "Identifier": "NVApiWrapper/0-GA102-A/fan/0",
         "IsHidden": false,
         "Name": "Fan 1 - NVIDIA GeForce RTX 3080",
         "NickName": "Control 1 - NVIDIA GeForce RTX 3080"
-      },
-      {
-        "Identifier": "NVApiWrapper/0-GA102-A/fan/1",
-        "IsHidden": false,
-        "Name": "Fan 2 - NVIDIA GeForce RTX 3080",
-        "NickName": "Control 2 - NVIDIA GeForce RTX 3080"
       }
     ],
     "HideFanSpeedCards": true,
@@ -1977,6 +1641,6 @@
       "Enabled": true,
       "ZeroRPMOverride": false
     },
-    "SensorCount": 79
+    "SensorCount": 76
   }
 }
