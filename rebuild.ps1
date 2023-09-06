@@ -2,7 +2,7 @@
 
 # Define the array of winget applications to be installed
 $wingetApps = @(
-    "CreativeTechnology.CreativeApp",
+    #"CreativeTechnology.CreativeApp",
     "Discord.Discord",
     "ElectronicArts.EADesktop",
     "EpicGames.EpicGamesLauncher",
