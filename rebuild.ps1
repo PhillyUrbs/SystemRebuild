@@ -11,7 +11,7 @@ $wingetApps = @(
     "Microsoft.BingWallpaper",
     "Microsoft.Office",
     "Microsoft.VisualStudioCode.Insiders",
-    "Nvidia.GeForceExperience",
+    #"Nvidia.GeForceExperience",
     "Plex.Plex",
     "Prusa3D.PrusaSlicer",
     "SlackTechnologies.Slack",
@@ -24,9 +24,9 @@ $wingetApps = @(
 
 <#
 Leftovers
-    Yealink USB Connect
+    Yealink USB Connect https://www.yealink.com/en/product-detail/usb-connect-management
     Razer Synapse
-    Battle.net Launcher
+    Battle.net Launcher https://www.blizzard.com/en-us/download/
     FanControl https://getfancontrol.com/
 #>
 
