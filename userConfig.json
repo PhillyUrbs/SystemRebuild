@@ -271,7 +271,7 @@
         "SelectedStop": 0
       },
       {
-        "Enable": false,
+        "Enable": true,
         "ForceApply": false,
         "Identifier": "/lpc/nct6798d/control/2",
         "IsHidden": false,
@@ -290,8 +290,8 @@
         "SelectedCommandStepUp": 8.0,
         "SelectedFanCurve": {
           "IsHidden": false,
-          "Name": "0%",
-          "Percent": 0.0
+          "Name": "PSU Aux",
+          "Percent": 25.0
         },
         "SelectedOffset": 0,
         "SelectedStart": 0,
@@ -348,7 +348,7 @@
         "MatchingFanSensor": null,
         "MinimumPercent": 0,
         "Name": "Fan #5",
-        "NickName": "Fan #5",
+        "NickName": "Fan #5 - No  Fan Installed",
         "SelectedCommandStepDown": 8.0,
         "SelectedCommandStepUp": 8.0,
         "SelectedFanCurve": {
@@ -411,7 +411,7 @@
         "MatchingFanSensor": null,
         "MinimumPercent": 0,
         "Name": "Fan #7",
-        "NickName": "Fan #7",
+        "NickName": "Fan #7 - No  Fan Installed",
         "SelectedCommandStepDown": 8.0,
         "SelectedCommandStepUp": 8.0,
         "SelectedFanCurve": null,
