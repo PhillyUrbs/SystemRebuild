@@ -11,6 +11,7 @@ $wingetApps = @(
     "Microsoft.BingWallpaper",
     "Microsoft.Office",
     "Microsoft.VisualStudioCode.Insiders",
+    #"mtkennerly.ludusavi", # Game Backups
     #"Nvidia.GeForceExperience",
     "Plex.Plex",
     "Prusa3D.PrusaSlicer",
@@ -18,7 +19,7 @@ $wingetApps = @(
     "Valve.Steam", 
     "9N4WGH0Z6VHQ", # Win11 HEVC Encoding
     "9P1HQ5TQZMGD", # Microsoft Loop
-    # "XP8K0HKJFRXGCK", # oh-my-posh
+    #"XP8K0HKJFRXGCK", # oh-my-posh
     "9PLDPG46G47Z", # Xbox Insider Hub
     "9NBLGGH30XJ3" # Xbox Accessories
 )
