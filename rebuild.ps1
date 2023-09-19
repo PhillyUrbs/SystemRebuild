@@ -35,7 +35,7 @@ Leftovers
 # Iterate through the array and install each winget application
 foreach ($wingetApp in $wingetApps) {
     try {
-        winget install $wingetApp --accept-source-agreements
+        winget install $wingetApp -e --accept-source-agreements
         Write-Output "$wingetApp installed successfully"
     } catch [System.Management.Automation.ActionPreferenceStopException] {
         Write-Error "Error installing $wingetApp - $($_.Exception.Message)"
