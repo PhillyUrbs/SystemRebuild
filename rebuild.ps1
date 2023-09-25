@@ -29,6 +29,7 @@ Leftovers
     Yealink USB Connect https://www.yealink.com/en/product-detail/usb-connect-management
     Razer Synapse
     Battle.net Launcher https://www.blizzard.com/en-us/download/
+    .\Battle.net-Setup.exe --lang=enUS --installpath="C:\Program Files (x86)\Battle.net"
     FanControl https://getfancontrol.com/
 #>
 
