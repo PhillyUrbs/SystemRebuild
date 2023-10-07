@@ -1,5 +1,5 @@
 {
-  "__VERSION__": "168",
+  "__VERSION__": "171",
   "Main": {
     "Controls": [
       {
@@ -9,15 +9,15 @@
         "IsHidden": false,
         "ManualControl": false,
         "ManualControlValue": 50,
-        "MatchingFanSensor": {
+        "MinimumPercent": 0,
+        "Name": "Fan #1",
+        "NickName": "Case Back",
+        "PairedFanSensor": {
           "Identifier": "/lpc/nct6798d/fan/0",
           "IsHidden": false,
           "Name": "Fan #1",
           "NickName": "Fan #1"
         },
-        "MinimumPercent": 0,
-        "Name": "Fan #1",
-        "NickName": "Case Back",
         "SelectedCommandStepDown": 8.0,
         "SelectedCommandStepUp": 8.0,
         "SelectedFanCurve": {
@@ -236,18 +236,19 @@
         "IsHidden": false,
         "ManualControl": false,
         "ManualControlValue": 50,
-        "MatchingFanSensor": {
+        "MinimumPercent": 0,
+        "Name": "Fan #2",
+        "NickName": "CPU Fans",
+        "PairedFanSensor": {
           "Identifier": "/lpc/nct6798d/fan/1",
           "IsHidden": false,
           "Name": "Fan #2",
           "NickName": "Fan #2"
         },
-        "MinimumPercent": 0,
-        "Name": "Fan #2",
-        "NickName": "CPU Fans",
         "SelectedCommandStepDown": 8.0,
         "SelectedCommandStepUp": 8.0,
         "SelectedFanCurve": {
+          "IgnoreHysteresisAtLimits": true,
           "IsHidden": false,
           "MaximumTemperature": 120,
           "MinimumTemperature": 20,
@@ -277,15 +278,15 @@
         "IsHidden": false,
         "ManualControl": false,
         "ManualControlValue": 50,
-        "MatchingFanSensor": {
+        "MinimumPercent": 0,
+        "Name": "Fan #3",
+        "NickName": "Case PSU",
+        "PairedFanSensor": {
           "Identifier": "/lpc/nct6798d/fan/2",
           "IsHidden": false,
           "Name": "Fan #3",
           "NickName": "Fan #3"
         },
-        "MinimumPercent": 0,
-        "Name": "Fan #3",
-        "NickName": "Case PSU",
         "SelectedCommandStepDown": 8.0,
         "SelectedCommandStepUp": 8.0,
         "SelectedFanCurve": {
@@ -304,18 +305,19 @@
         "IsHidden": false,
         "ManualControl": false,
         "ManualControlValue": 50,
-        "MatchingFanSensor": {
+        "MinimumPercent": 0,
+        "Name": "Fan #4",
+        "NickName": "Case Front Bottom",
+        "PairedFanSensor": {
           "Identifier": "/lpc/nct6798d/fan/3",
           "IsHidden": false,
           "Name": "Fan #4",
           "NickName": "Fan #4"
         },
-        "MinimumPercent": 0,
-        "Name": "Fan #4",
-        "NickName": "Case Front Bottom",
         "SelectedCommandStepDown": 8.0,
         "SelectedCommandStepUp": 8.0,
         "SelectedFanCurve": {
+          "IgnoreHysteresisAtLimits": true,
           "IsHidden": false,
           "MaximumTemperature": 120,
           "MinimumTemperature": 20,
@@ -342,13 +344,13 @@
         "Enable": false,
         "ForceApply": false,
         "Identifier": "/lpc/nct6798d/control/4",
-        "IsHidden": false,
+        "IsHidden": true,
         "ManualControl": false,
         "ManualControlValue": 50,
-        "MatchingFanSensor": null,
         "MinimumPercent": 0,
         "Name": "Fan #5",
         "NickName": "Fan #5 - No  Fan Installed",
+        "PairedFanSensor": null,
         "SelectedCommandStepDown": 8.0,
         "SelectedCommandStepUp": 8.0,
         "SelectedFanCurve": {
@@ -367,18 +369,19 @@
         "IsHidden": false,
         "ManualControl": false,
         "ManualControlValue": 50,
-        "MatchingFanSensor": {
+        "MinimumPercent": 0,
+        "Name": "Fan #6",
+        "NickName": "Case Front Top",
+        "PairedFanSensor": {
           "Identifier": "/lpc/nct6798d/fan/5",
           "IsHidden": false,
           "Name": "Fan #6",
           "NickName": "Fan #6"
         },
-        "MinimumPercent": 0,
-        "Name": "Fan #6",
-        "NickName": "Case Front Top",
         "SelectedCommandStepDown": 8.0,
         "SelectedCommandStepUp": 8.0,
         "SelectedFanCurve": {
+          "IgnoreHysteresisAtLimits": true,
           "IsHidden": false,
           "MaximumTemperature": 120,
           "MinimumTemperature": 20,
@@ -405,13 +408,13 @@
         "Enable": false,
         "ForceApply": false,
         "Identifier": "/lpc/nct6798d/control/6",
-        "IsHidden": false,
+        "IsHidden": true,
         "ManualControl": false,
         "ManualControlValue": 50,
-        "MatchingFanSensor": null,
         "MinimumPercent": 0,
         "Name": "Fan #7",
         "NickName": "Fan #7 - No  Fan Installed",
+        "PairedFanSensor": null,
         "SelectedCommandStepDown": 8.0,
         "SelectedCommandStepUp": 8.0,
         "SelectedFanCurve": null,
@@ -426,10 +429,10 @@
         "IsHidden": false,
         "ManualControl": false,
         "ManualControlValue": 50,
-        "MatchingFanSensor": null,
         "MinimumPercent": 0,
         "Name": "Control 2 - NVIDIA GeForce RTX 3080",
         "NickName": "Control 2 - NVIDIA GeForce RTX 3080",
+        "PairedFanSensor": null,
         "SelectedCommandStepDown": 8.0,
         "SelectedCommandStepUp": 8.0,
         "SelectedFanCurve": {
@@ -466,15 +469,15 @@
         "IsHidden": false,
         "ManualControl": false,
         "ManualControlValue": 50,
-        "MatchingFanSensor": {
+        "MinimumPercent": 0,
+        "Name": "Control 1 - NVIDIA GeForce RTX 3080",
+        "NickName": "Control 1 - NVIDIA GeForce RTX 3080",
+        "PairedFanSensor": {
           "Identifier": "NVApiWrapper/0-GA102-A/fan/0",
           "IsHidden": false,
           "Name": "Fan 1 - NVIDIA GeForce RTX 3080",
           "NickName": "Control 1 - NVIDIA GeForce RTX 3080"
         },
-        "MinimumPercent": 0,
-        "Name": "Control 1 - NVIDIA GeForce RTX 3080",
-        "NickName": "Control 1 - NVIDIA GeForce RTX 3080",
         "SelectedCommandStepDown": 8.0,
         "SelectedCommandStepUp": 8.0,
         "SelectedFanCurve": {
@@ -868,6 +871,7 @@
         "Percent": 25.0
       },
       {
+        "IgnoreHysteresisAtLimits": true,
         "IsHidden": false,
         "MaximumTemperature": 120,
         "MinimumTemperature": 20,
@@ -887,6 +891,7 @@
         }
       },
       {
+        "IgnoreHysteresisAtLimits": true,
         "IsHidden": false,
         "MaximumTemperature": 120,
         "MinimumTemperature": 20,
@@ -906,6 +911,7 @@
         }
       },
       {
+        "IgnoreHysteresisAtLimits": true,
         "IsHidden": false,
         "MaximumTemperature": 120,
         "MinimumTemperature": 20,
@@ -925,6 +931,7 @@
         }
       },
       {
+        "IgnoreHysteresisAtLimits": true,
         "IsHidden": false,
         "MaximumTemperature": 120,
         "MinimumTemperature": 20,
@@ -1641,6 +1648,6 @@
       "Enabled": true,
       "ZeroRPMOverride": false
     },
-    "SensorCount": 76
+    "SensorCount": 77
   }
 }
