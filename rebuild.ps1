@@ -15,8 +15,10 @@ $wingetApps = @(
     #"Nvidia.GeForceExperience",
     "Plex.Plex",
     "Prusa3D.PrusaSlicer",
+    "RazerInc.RazerInstaller",
     "SlackTechnologies.Slack",
     "Valve.Steam", 
+    "Yealink.YealinkUSBConnect",
     "9N4WGH0Z6VHQ", # Win11 HEVC Encoding
     "9P1HQ5TQZMGD", # Microsoft Loop
     #"XP8K0HKJFRXGCK", # oh-my-posh
@@ -26,8 +28,6 @@ $wingetApps = @(
 
 <#
 Leftovers
-    Yealink USB Connect https://www.yealink.com/en/product-detail/usb-connect-management
-    Razer Synapse
     Battle.net Launcher https://www.blizzard.com/en-us/download/
     .\Battle.net-Setup.exe --lang=enUS --installpath="C:\Program Files (x86)\Battle.net"
     FanControl https://getfancontrol.com/
