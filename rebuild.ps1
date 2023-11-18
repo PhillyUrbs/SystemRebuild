@@ -2,6 +2,7 @@
 
 # Define the array of winget applications to be installed
 $wingetApps = @(
+    Bitwarden.Bitwarden,
     #"CreativeTechnology.CreativeApp",
     "Discord.Discord",
     "ElectronicArts.EADesktop",
