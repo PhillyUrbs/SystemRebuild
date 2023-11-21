@@ -32,6 +32,9 @@ Leftovers
     Battle.net Launcher https://www.blizzard.com/en-us/download/
     .\Battle.net-Setup.exe --lang=enUS --installpath="C:\Program Files (x86)\Battle.net"
     FanControl https://getfancontrol.com/
+    BypassPaywall edge extension https://gitlab.com/magnolia1234/bypass-paywalls-chrome-clean/-/releases
+        [DONE] allow extension install via reg key
+        add extension to edge and allow auto updates. Not sure if edge extension developer mode is needed. 
 #>
 
 # Iterate through the array and install each winget application
@@ -44,13 +47,13 @@ foreach ($wingetApp in $wingetApps) {
     }
 }
 
-# Remove Razer Game Manager Service as a Depenant service of Razer Synapse Service
-# reg import "./Razer.reg"
-
 # import registry changes from BypassPawall.reg and skip any prompts
 reg import "./BypassPawall.reg" /f
 
 #need to install the extension manually from https://gitlab.com/magnolia1234/bypass-paywalls-chrome-clean/-/releases
+
+# Remove Razer Game Manager Service as a Depenant service of Razer Synapse Service
+# reg import "./Razer.reg"
 
 <#
 #stop and disable Razer Game Manager Service
