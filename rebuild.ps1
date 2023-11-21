@@ -47,8 +47,13 @@ foreach ($wingetApp in $wingetApps) {
     }
 }
 
-# import registry changes from BypassPawall.reg and skip any prompts
-reg import "./BypassPawall.reg" /f
+
+# import registry changes from BypassPawall.reg and skip any prompts. 
+#reg import "./BypassPaywall.reg" /f  # Now handled by entries below
+
+# create the registry entries to install the BypassPaywall extension for Edge
+reg add "HKLM\SOFTWARE\Policies\Microsoft\Edge\ExtensionInstallAllowlist" /v "1" /t REG_SZ /d "lkbebcjgcmobigpeffafkodonchffocl" /f
+reg add "HKLM\SOFTWARE\Policies\Microsoft\Edge\ExtensionInstallForcelist" /v "1" /t REG_SZ /d "lkbebcjgcmobigpeffafkodonchffocl" /f
 
 #need to install the extension manually from https://gitlab.com/magnolia1234/bypass-paywalls-chrome-clean/-/releases
 
