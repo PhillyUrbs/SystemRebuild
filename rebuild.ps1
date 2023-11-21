@@ -2,7 +2,7 @@
 
 # Define the array of winget applications to be installed
 $wingetApps = @(
-    Bitwarden.Bitwarden,
+    "Bitwarden.Bitwarden",
     #"CreativeTechnology.CreativeApp",
     "Discord.Discord",
     "ElectronicArts.EADesktop",
@@ -46,6 +46,11 @@ foreach ($wingetApp in $wingetApps) {
 
 # Remove Razer Game Manager Service as a Depenant service of Razer Synapse Service
 # reg import "./Razer.reg"
+
+# import registry changes from BypassPawall.reg and skip any prompts
+reg import "./BypassPawall.reg" /f
+
+#need to install the extension manually from https://gitlab.com/magnolia1234/bypass-paywalls-chrome-clean/-/releases
 
 <#
 #stop and disable Razer Game Manager Service
