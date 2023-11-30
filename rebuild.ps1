@@ -53,7 +53,16 @@ foreach ($wingetApp in $wingetApps) {
 
 # create the registry entries to install the BypassPaywall extension for Edge
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Edge\ExtensionInstallAllowlist" /v "1" /t REG_SZ /d "lkbebcjgcmobigpeffafkodonchffocl" /f
-reg add "HKLM\SOFTWARE\Policies\Microsoft\Edge\ExtensionInstallForcelist" /v "1" /t REG_SZ /d "lkbebcjgcmobigpeffafkodonchffocl" /f
+# reg add "HKLM\SOFTWARE\Policies\Microsoft\Edge\ExtensionInstallForcelist" /v "1" /t REG_SZ /d "lkbebcjgcmobigpeffafkodonchffocl;https://gitlab.com/magnolia1234/bypass-paywalls-chrome-clean/-/raw/master/updates.xml" /f
+
+# find and download the crx file for the latest release of BypassPaywall and install it. the extension is available at https://gitlab.com/magnolia1234/bypass-paywalls-chrome-clean/-/releases
+$crxUrl = (Invoke-WebRequest -Uri "https://gitlab.com/magnolia1234/bypass-paywalls-chrome-clean/-/releases" -UseBasicParsing).Links | Where-Object {$_.href -like "*.crx"} | Select-Object -First 1 -ExpandProperty href
+$crxFile = $crxUrl.Split("/")[-1]
+Invoke-WebRequest -Uri $crxUrl -OutFile $crxFile
+Add-AppxPackage -Path $crxFile
+Remove-Item $crxFile
+
+
 
 #need to install the extension manually from https://gitlab.com/magnolia1234/bypass-paywalls-chrome-clean/-/releases
 
