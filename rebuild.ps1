@@ -47,6 +47,12 @@ foreach ($wingetApp in $wingetApps) {
     }
 }
 
+# download and silently install the battle.net launcher. the download link is https://us.battle.net/download/getInstaller?os=win&installer=Battle.net-Setup.exe#/Battle.net-Setup.exe and the silent install switch is -s /quiet.
+Invoke-WebRequest -Uri "https://us.battle.net/download/getInstaller?os=win&installer=Battle.net-Setup.exe#/Battle.net-Setup.exe" -OutFile "Battle.net-Setup.exe"
+.\Battle.net-Setup.exe -s /quiet
+Remove-Item -Path "Battle.net-Setup.exe"
+Remove-Item -Path "$env:PUBLIC\Desktop\Battle.net.lnk"
+
 
 # import registry changes from BypassPawall.reg and skip any prompts. 
 #reg import "./BypassPaywall.reg" /f  # Now handled by entries below
