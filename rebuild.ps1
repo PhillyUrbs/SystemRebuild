@@ -16,6 +16,7 @@ $wingetApps = @(
     #"Nvidia.GeForceExperience",
     "Plex.Plex",
     "Prusa3D.PrusaSlicer",
+    "Rem0o.FanControl",
     "RazerInc.RazerInstaller",
     "SlackTechnologies.Slack",
     "Valve.Steam", 
@@ -31,7 +32,6 @@ $wingetApps = @(
 Leftovers
     Battle.net Launcher https://www.blizzard.com/en-us/download/
     .\Battle.net-Setup.exe --lang=enUS --installpath="C:\Program Files (x86)\Battle.net"
-    FanControl https://getfancontrol.com/
     BypassPaywall edge extension https://gitlab.com/magnolia1234/bypass-paywalls-chrome-clean/-/releases
         [DONE] allow extension install via reg key
         add extension to edge and allow auto updates. Not sure if edge extension developer mode is needed. 
