@@ -1,8 +1,54 @@
 {
-  "__VERSION__": "171",
+  "__VERSION__": "186",
   "Main": {
     "Controls": [
       {
+        "Calibration": [
+          [
+            0,
+            0
+          ],
+          [
+            10,
+            475
+          ],
+          [
+            20,
+            864
+          ],
+          [
+            30,
+            1202
+          ],
+          [
+            40,
+            1485
+          ],
+          [
+            50,
+            1744
+          ],
+          [
+            60,
+            1971
+          ],
+          [
+            70,
+            2165
+          ],
+          [
+            80,
+            2315
+          ],
+          [
+            90,
+            2481
+          ],
+          [
+            100,
+            2700
+          ]
+        ],
         "Enable": true,
         "ForceApply": false,
         "Identifier": "/lpc/nct6798d/control/0",
@@ -21,215 +67,88 @@
         "SelectedCommandStepDown": 8.0,
         "SelectedCommandStepUp": 8.0,
         "SelectedFanCurve": {
+          "CommandMode": 0,
+          "IgnoreHysteresisAtLimits": true,
           "IsHidden": false,
+          "MaximumCommand": 100,
+          "MaximumTemperature": 120,
+          "MinimumTemperature": 20,
           "Name": "Mix Case",
-          "SelectedFanCurves": [
-            {
-              "Deadband": 5.0,
-              "IdleTemperature": 55.0,
-              "IsHidden": false,
-              "LoadTemperature": 90.0,
-              "MaxFanSpeed": 45,
-              "MinFanSpeed": 10,
-              "Name": "Auto CPU Case",
-              "SelectedResponseTime": 10,
-              "SelectedTempSource": {
-                "Identifier": "Time/CPU Average over 10 Seconds",
-                "IsHidden": false,
-                "Name": "CPU Average over 10 Seconds",
-                "SelectedTempSource": {
-                  "Identifier": "Mix/Mix CPU Core Average",
-                  "IsHidden": false,
-                  "Name": "Mix CPU Core Average",
-                  "SelectedMixFunction": 0,
-                  "SelectedSensors": [
-                    {
-                      "Identifier": "/intelcpu/0/temperature/0",
-                      "IsHidden": false,
-                      "Name": "CPU Core #1",
-                      "NickName": "CPU Core #1"
-                    },
-                    {
-                      "Identifier": "/intelcpu/0/temperature/1",
-                      "IsHidden": false,
-                      "Name": "CPU Core #2",
-                      "NickName": "CPU Core #2"
-                    },
-                    {
-                      "Identifier": "/intelcpu/0/temperature/2",
-                      "IsHidden": false,
-                      "Name": "CPU Core #3",
-                      "NickName": "CPU Core #3"
-                    },
-                    {
-                      "Identifier": "/intelcpu/0/temperature/3",
-                      "IsHidden": false,
-                      "Name": "CPU Core #4",
-                      "NickName": "CPU Core #4"
-                    },
-                    {
-                      "Identifier": "/intelcpu/0/temperature/4",
-                      "IsHidden": false,
-                      "Name": "CPU Core #5",
-                      "NickName": "CPU Core #5"
-                    },
-                    {
-                      "Identifier": "/intelcpu/0/temperature/5",
-                      "IsHidden": false,
-                      "Name": "CPU Core #6",
-                      "NickName": "CPU Core #6"
-                    },
-                    {
-                      "Identifier": "/intelcpu/0/temperature/6",
-                      "IsHidden": false,
-                      "Name": "CPU Core #7",
-                      "NickName": "CPU Core #7"
-                    },
-                    {
-                      "Identifier": "/intelcpu/0/temperature/7",
-                      "IsHidden": false,
-                      "Name": "CPU Core #8",
-                      "NickName": "CPU Core #8"
-                    },
-                    {
-                      "Identifier": "/intelcpu/0/temperature/8",
-                      "IsHidden": false,
-                      "Name": "CPU Core #9",
-                      "NickName": "CPU Core #9"
-                    },
-                    {
-                      "Identifier": "/intelcpu/0/temperature/9",
-                      "IsHidden": false,
-                      "Name": "CPU Core #10",
-                      "NickName": "CPU Core #10"
-                    },
-                    {
-                      "Identifier": "/intelcpu/0/temperature/10",
-                      "IsHidden": false,
-                      "Name": "CPU Core #11",
-                      "NickName": "CPU Core #11"
-                    },
-                    {
-                      "Identifier": "/intelcpu/0/temperature/11",
-                      "IsHidden": false,
-                      "Name": "CPU Core #12",
-                      "NickName": "CPU Core #12"
-                    },
-                    {
-                      "Identifier": "/intelcpu/0/temperature/12",
-                      "IsHidden": false,
-                      "Name": "CPU Core #13",
-                      "NickName": "CPU Core #13"
-                    },
-                    {
-                      "Identifier": "/intelcpu/0/temperature/13",
-                      "IsHidden": false,
-                      "Name": "CPU Core #14",
-                      "NickName": "CPU Core #14"
-                    },
-                    {
-                      "Identifier": "/intelcpu/0/temperature/14",
-                      "IsHidden": false,
-                      "Name": "CPU Core #15",
-                      "NickName": "CPU Core #15"
-                    },
-                    {
-                      "Identifier": "/intelcpu/0/temperature/15",
-                      "IsHidden": false,
-                      "Name": "CPU Core #16",
-                      "NickName": "CPU Core #16"
-                    },
-                    {
-                      "Identifier": "/intelcpu/0/temperature/16",
-                      "IsHidden": false,
-                      "Name": "CPU Core #17",
-                      "NickName": "CPU Core #17"
-                    },
-                    {
-                      "Identifier": "/intelcpu/0/temperature/17",
-                      "IsHidden": false,
-                      "Name": "CPU Core #18",
-                      "NickName": "CPU Core #18"
-                    },
-                    {
-                      "Identifier": "/intelcpu/0/temperature/18",
-                      "IsHidden": false,
-                      "Name": "CPU Core #19",
-                      "NickName": "CPU Core #19"
-                    },
-                    {
-                      "Identifier": "/intelcpu/0/temperature/19",
-                      "IsHidden": false,
-                      "Name": "CPU Core #20",
-                      "NickName": "CPU Core #20"
-                    },
-                    {
-                      "Identifier": "/intelcpu/0/temperature/20",
-                      "IsHidden": false,
-                      "Name": "CPU Core #21",
-                      "NickName": "CPU Core #21"
-                    },
-                    {
-                      "Identifier": "/intelcpu/0/temperature/21",
-                      "IsHidden": false,
-                      "Name": "CPU Core #22",
-                      "NickName": "CPU Core #22"
-                    },
-                    {
-                      "Identifier": "/intelcpu/0/temperature/22",
-                      "IsHidden": false,
-                      "Name": "CPU Core #23",
-                      "NickName": "CPU Core #23"
-                    },
-                    {
-                      "Identifier": "/intelcpu/0/temperature/23",
-                      "IsHidden": false,
-                      "Name": "CPU Core #24",
-                      "NickName": "CPU Core #24"
-                    },
-                    {
-                      "Identifier": "/intelcpu/0/temperature/24",
-                      "IsHidden": false,
-                      "Name": "CPU Package",
-                      "NickName": "CPU Package"
-                    }
-                  ]
-                },
-                "SelectedTime": 10
-              },
-              "Step": 2.0
-            },
-            {
-              "Deadband": 5.0,
-              "IdleTemperature": 60.0,
-              "IsHidden": false,
-              "LoadTemperature": 90.0,
-              "MaxFanSpeed": 95,
-              "MinFanSpeed": 10,
-              "Name": "Auto GPU Case",
-              "SelectedResponseTime": 10,
-              "SelectedTempSource": {
-                "Identifier": "Time/GPU Average over 10 Seconds",
-                "IsHidden": false,
-                "Name": "GPU Average over 10 Seconds",
-                "SelectedTempSource": {
-                  "Identifier": "NVApiWrapper/0-GA102-A/sensor/0",
-                  "IsHidden": false,
-                  "Name": "GPU",
-                  "NickName": "GPU"
-                },
-                "SelectedTime": 10
-              },
-              "Step": 2.0
-            }
+          "OneWayHysteresis": false,
+          "Points": [
+            "60,20",
+            "80,80"
           ],
-          "SelectedMixFunction": 0
+          "SelectedHysteresis": 2.0,
+          "SelectedResponseTime": 1,
+          "SelectedTempSource": {
+            "Identifier": "Mix/Mix AVG CPU GPU",
+            "IsHidden": false,
+            "Name": "Mix AVG CPU GPU",
+            "SelectedMixFunction": 0,
+            "SelectedSensors": [
+              {
+                "Identifier": "/intelcpu/0/temperature/24",
+                "IsHidden": false,
+                "Name": "CPU Package",
+                "NickName": "CPU Package"
+              },
+              {
+                "Identifier": "NVApiWrapper/0-GA102-A/sensor/0",
+                "IsHidden": false,
+                "Name": "GPU",
+                "NickName": "GPU"
+              }
+            ]
+          }
         },
         "SelectedOffset": 0,
-        "SelectedStart": 0,
-        "SelectedStop": 0
+        "SelectedStart": 12,
+        "SelectedStop": 6
       },
       {
+        "Calibration": [
+          [
+            10,
+            0
+          ],
+          [
+            20,
+            314
+          ],
+          [
+            30,
+            486
+          ],
+          [
+            40,
+            645
+          ],
+          [
+            50,
+            788
+          ],
+          [
+            60,
+            929
+          ],
+          [
+            70,
+            1048
+          ],
+          [
+            80,
+            1164
+          ],
+          [
+            90,
+            1280
+          ],
+          [
+            100,
+            1423
+          ]
+        ],
         "Enable": true,
         "ForceApply": false,
         "Identifier": "/lpc/nct6798d/control/1",
@@ -248,8 +167,10 @@
         "SelectedCommandStepDown": 8.0,
         "SelectedCommandStepUp": 8.0,
         "SelectedFanCurve": {
+          "CommandMode": 0,
           "IgnoreHysteresisAtLimits": true,
           "IsHidden": false,
+          "MaximumCommand": 100,
           "MaximumTemperature": 120,
           "MinimumTemperature": 20,
           "Name": "CPU Curve",
@@ -261,17 +182,221 @@
           "SelectedHysteresis": 5.0,
           "SelectedResponseTime": 5,
           "SelectedTempSource": {
-            "Identifier": "/intelcpu/0/temperature/24",
+            "Identifier": "Time/CPU Average over 10 Seconds",
             "IsHidden": false,
-            "Name": "CPU Package",
-            "NickName": "CPU Package"
+            "Name": "CPU Average over 10 Seconds",
+            "SelectedTempSource": {
+              "Identifier": "Mix/Mix CPU Core Average",
+              "IsHidden": false,
+              "Name": "Mix CPU Core Average",
+              "SelectedMixFunction": 0,
+              "SelectedSensors": [
+                {
+                  "Identifier": "/intelcpu/0/temperature/0",
+                  "IsHidden": false,
+                  "Name": "CPU Core #1",
+                  "NickName": "CPU Core #1"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/1",
+                  "IsHidden": false,
+                  "Name": "CPU Core #2",
+                  "NickName": "CPU Core #2"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/2",
+                  "IsHidden": false,
+                  "Name": "CPU Core #3",
+                  "NickName": "CPU Core #3"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/3",
+                  "IsHidden": false,
+                  "Name": "CPU Core #4",
+                  "NickName": "CPU Core #4"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/4",
+                  "IsHidden": false,
+                  "Name": "CPU Core #5",
+                  "NickName": "CPU Core #5"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/5",
+                  "IsHidden": false,
+                  "Name": "CPU Core #6",
+                  "NickName": "CPU Core #6"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/6",
+                  "IsHidden": false,
+                  "Name": "CPU Core #7",
+                  "NickName": "CPU Core #7"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/7",
+                  "IsHidden": false,
+                  "Name": "CPU Core #8",
+                  "NickName": "CPU Core #8"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/8",
+                  "IsHidden": false,
+                  "Name": "CPU Core #9",
+                  "NickName": "CPU Core #9"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/9",
+                  "IsHidden": false,
+                  "Name": "CPU Core #10",
+                  "NickName": "CPU Core #10"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/10",
+                  "IsHidden": false,
+                  "Name": "CPU Core #11",
+                  "NickName": "CPU Core #11"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/11",
+                  "IsHidden": false,
+                  "Name": "CPU Core #12",
+                  "NickName": "CPU Core #12"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/12",
+                  "IsHidden": false,
+                  "Name": "CPU Core #13",
+                  "NickName": "CPU Core #13"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/13",
+                  "IsHidden": false,
+                  "Name": "CPU Core #14",
+                  "NickName": "CPU Core #14"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/14",
+                  "IsHidden": false,
+                  "Name": "CPU Core #15",
+                  "NickName": "CPU Core #15"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/15",
+                  "IsHidden": false,
+                  "Name": "CPU Core #16",
+                  "NickName": "CPU Core #16"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/16",
+                  "IsHidden": false,
+                  "Name": "CPU Core #17",
+                  "NickName": "CPU Core #17"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/17",
+                  "IsHidden": false,
+                  "Name": "CPU Core #18",
+                  "NickName": "CPU Core #18"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/18",
+                  "IsHidden": false,
+                  "Name": "CPU Core #19",
+                  "NickName": "CPU Core #19"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/19",
+                  "IsHidden": false,
+                  "Name": "CPU Core #20",
+                  "NickName": "CPU Core #20"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/20",
+                  "IsHidden": false,
+                  "Name": "CPU Core #21",
+                  "NickName": "CPU Core #21"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/21",
+                  "IsHidden": false,
+                  "Name": "CPU Core #22",
+                  "NickName": "CPU Core #22"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/22",
+                  "IsHidden": false,
+                  "Name": "CPU Core #23",
+                  "NickName": "CPU Core #23"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/23",
+                  "IsHidden": false,
+                  "Name": "CPU Core #24",
+                  "NickName": "CPU Core #24"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/24",
+                  "IsHidden": false,
+                  "Name": "CPU Package",
+                  "NickName": "CPU Package"
+                }
+              ]
+            },
+            "SelectedTime": 10
           }
         },
         "SelectedOffset": 0,
-        "SelectedStart": 0,
-        "SelectedStop": 0
+        "SelectedStart": 19,
+        "SelectedStop": 16
       },
       {
+        "Calibration": [
+          [
+            0,
+            0
+          ],
+          [
+            10,
+            231
+          ],
+          [
+            20,
+            493
+          ],
+          [
+            30,
+            715
+          ],
+          [
+            40,
+            939
+          ],
+          [
+            50,
+            1153
+          ],
+          [
+            60,
+            1348
+          ],
+          [
+            70,
+            1527
+          ],
+          [
+            80,
+            1711
+          ],
+          [
+            90,
+            1876
+          ],
+          [
+            100,
+            2045
+          ]
+        ],
         "Enable": true,
         "ForceApply": false,
         "Identifier": "/lpc/nct6798d/control/2",
@@ -290,15 +415,62 @@
         "SelectedCommandStepDown": 8.0,
         "SelectedCommandStepUp": 8.0,
         "SelectedFanCurve": {
+          "CommandMode": 0,
           "IsHidden": false,
           "Name": "PSU Aux",
           "Percent": 25.0
         },
         "SelectedOffset": 0,
-        "SelectedStart": 0,
-        "SelectedStop": 0
+        "SelectedStart": 18,
+        "SelectedStop": 6
       },
       {
+        "Calibration": [
+          [
+            0,
+            0
+          ],
+          [
+            10,
+            449
+          ],
+          [
+            20,
+            841
+          ],
+          [
+            30,
+            1147
+          ],
+          [
+            40,
+            1425
+          ],
+          [
+            50,
+            1669
+          ],
+          [
+            60,
+            1902
+          ],
+          [
+            70,
+            2056
+          ],
+          [
+            80,
+            2212
+          ],
+          [
+            90,
+            2358
+          ],
+          [
+            100,
+            2519
+          ]
+        ],
         "Enable": true,
         "ForceApply": false,
         "Identifier": "/lpc/nct6798d/control/3",
@@ -317,8 +489,10 @@
         "SelectedCommandStepDown": 8.0,
         "SelectedCommandStepUp": 8.0,
         "SelectedFanCurve": {
+          "CommandMode": 0,
           "IgnoreHysteresisAtLimits": true,
           "IsHidden": false,
+          "MaximumCommand": 100,
           "MaximumTemperature": 120,
           "MinimumTemperature": 20,
           "Name": "Case GPU",
@@ -330,17 +504,32 @@
           "SelectedHysteresis": 5.0,
           "SelectedResponseTime": 5,
           "SelectedTempSource": {
-            "Identifier": "NVApiWrapper/0-GA102-A/sensor/0",
+            "Identifier": "Mix/Mix AVG CPU GPU",
             "IsHidden": false,
-            "Name": "GPU",
-            "NickName": "GPU"
+            "Name": "Mix AVG CPU GPU",
+            "SelectedMixFunction": 0,
+            "SelectedSensors": [
+              {
+                "Identifier": "/intelcpu/0/temperature/24",
+                "IsHidden": false,
+                "Name": "CPU Package",
+                "NickName": "CPU Package"
+              },
+              {
+                "Identifier": "NVApiWrapper/0-GA102-A/sensor/0",
+                "IsHidden": false,
+                "Name": "GPU",
+                "NickName": "GPU"
+              }
+            ]
           }
         },
         "SelectedOffset": 0,
-        "SelectedStart": 0,
-        "SelectedStop": 0
+        "SelectedStart": 12,
+        "SelectedStop": 6
       },
       {
+        "Calibration": [],
         "Enable": false,
         "ForceApply": false,
         "Identifier": "/lpc/nct6798d/control/4",
@@ -353,16 +542,58 @@
         "PairedFanSensor": null,
         "SelectedCommandStepDown": 8.0,
         "SelectedCommandStepUp": 8.0,
-        "SelectedFanCurve": {
-          "IsHidden": false,
-          "Name": "0%",
-          "Percent": 0.0
-        },
+        "SelectedFanCurve": null,
         "SelectedOffset": 0,
         "SelectedStart": 0,
         "SelectedStop": 0
       },
       {
+        "Calibration": [
+          [
+            0,
+            0
+          ],
+          [
+            10,
+            407
+          ],
+          [
+            20,
+            819
+          ],
+          [
+            30,
+            1107
+          ],
+          [
+            40,
+            1377
+          ],
+          [
+            50,
+            1611
+          ],
+          [
+            60,
+            1812
+          ],
+          [
+            70,
+            1972
+          ],
+          [
+            80,
+            2140
+          ],
+          [
+            90,
+            2278
+          ],
+          [
+            100,
+            2428
+          ]
+        ],
         "Enable": true,
         "ForceApply": false,
         "Identifier": "/lpc/nct6798d/control/5",
@@ -381,8 +612,10 @@
         "SelectedCommandStepDown": 8.0,
         "SelectedCommandStepUp": 8.0,
         "SelectedFanCurve": {
+          "CommandMode": 0,
           "IgnoreHysteresisAtLimits": true,
           "IsHidden": false,
+          "MaximumCommand": 100,
           "MaximumTemperature": 120,
           "MinimumTemperature": 20,
           "Name": "Case CPU ",
@@ -394,17 +627,176 @@
           "SelectedHysteresis": 5.0,
           "SelectedResponseTime": 5,
           "SelectedTempSource": {
-            "Identifier": "/intelcpu/0/temperature/24",
+            "Identifier": "Time/CPU Average over 10 Seconds",
             "IsHidden": false,
-            "Name": "CPU Package",
-            "NickName": "CPU Package"
+            "Name": "CPU Average over 10 Seconds",
+            "SelectedTempSource": {
+              "Identifier": "Mix/Mix CPU Core Average",
+              "IsHidden": false,
+              "Name": "Mix CPU Core Average",
+              "SelectedMixFunction": 0,
+              "SelectedSensors": [
+                {
+                  "Identifier": "/intelcpu/0/temperature/0",
+                  "IsHidden": false,
+                  "Name": "CPU Core #1",
+                  "NickName": "CPU Core #1"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/1",
+                  "IsHidden": false,
+                  "Name": "CPU Core #2",
+                  "NickName": "CPU Core #2"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/2",
+                  "IsHidden": false,
+                  "Name": "CPU Core #3",
+                  "NickName": "CPU Core #3"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/3",
+                  "IsHidden": false,
+                  "Name": "CPU Core #4",
+                  "NickName": "CPU Core #4"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/4",
+                  "IsHidden": false,
+                  "Name": "CPU Core #5",
+                  "NickName": "CPU Core #5"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/5",
+                  "IsHidden": false,
+                  "Name": "CPU Core #6",
+                  "NickName": "CPU Core #6"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/6",
+                  "IsHidden": false,
+                  "Name": "CPU Core #7",
+                  "NickName": "CPU Core #7"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/7",
+                  "IsHidden": false,
+                  "Name": "CPU Core #8",
+                  "NickName": "CPU Core #8"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/8",
+                  "IsHidden": false,
+                  "Name": "CPU Core #9",
+                  "NickName": "CPU Core #9"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/9",
+                  "IsHidden": false,
+                  "Name": "CPU Core #10",
+                  "NickName": "CPU Core #10"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/10",
+                  "IsHidden": false,
+                  "Name": "CPU Core #11",
+                  "NickName": "CPU Core #11"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/11",
+                  "IsHidden": false,
+                  "Name": "CPU Core #12",
+                  "NickName": "CPU Core #12"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/12",
+                  "IsHidden": false,
+                  "Name": "CPU Core #13",
+                  "NickName": "CPU Core #13"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/13",
+                  "IsHidden": false,
+                  "Name": "CPU Core #14",
+                  "NickName": "CPU Core #14"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/14",
+                  "IsHidden": false,
+                  "Name": "CPU Core #15",
+                  "NickName": "CPU Core #15"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/15",
+                  "IsHidden": false,
+                  "Name": "CPU Core #16",
+                  "NickName": "CPU Core #16"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/16",
+                  "IsHidden": false,
+                  "Name": "CPU Core #17",
+                  "NickName": "CPU Core #17"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/17",
+                  "IsHidden": false,
+                  "Name": "CPU Core #18",
+                  "NickName": "CPU Core #18"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/18",
+                  "IsHidden": false,
+                  "Name": "CPU Core #19",
+                  "NickName": "CPU Core #19"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/19",
+                  "IsHidden": false,
+                  "Name": "CPU Core #20",
+                  "NickName": "CPU Core #20"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/20",
+                  "IsHidden": false,
+                  "Name": "CPU Core #21",
+                  "NickName": "CPU Core #21"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/21",
+                  "IsHidden": false,
+                  "Name": "CPU Core #22",
+                  "NickName": "CPU Core #22"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/22",
+                  "IsHidden": false,
+                  "Name": "CPU Core #23",
+                  "NickName": "CPU Core #23"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/23",
+                  "IsHidden": false,
+                  "Name": "CPU Core #24",
+                  "NickName": "CPU Core #24"
+                },
+                {
+                  "Identifier": "/intelcpu/0/temperature/24",
+                  "IsHidden": false,
+                  "Name": "CPU Package",
+                  "NickName": "CPU Package"
+                }
+              ]
+            },
+            "SelectedTime": 10
           }
         },
         "SelectedOffset": 0,
-        "SelectedStart": 0,
-        "SelectedStop": 0
+        "SelectedStart": 12,
+        "SelectedStop": 6
       },
       {
+        "Calibration": [],
         "Enable": false,
         "ForceApply": false,
         "Identifier": "/lpc/nct6798d/control/6",
@@ -423,6 +815,36 @@
         "SelectedStop": 0
       },
       {
+        "Calibration": [
+          [
+            40,
+            0
+          ],
+          [
+            50,
+            964
+          ],
+          [
+            60,
+            1464
+          ],
+          [
+            70,
+            1960
+          ],
+          [
+            80,
+            2448
+          ],
+          [
+            90,
+            2944
+          ],
+          [
+            100,
+            3325
+          ]
+        ],
         "Enable": true,
         "ForceApply": false,
         "Identifier": "NVApiWrapper/0-GA102-A/control/1",
@@ -432,37 +854,85 @@
         "MinimumPercent": 0,
         "Name": "Control 2 - NVIDIA GeForce RTX 3080",
         "NickName": "Control 2 - NVIDIA GeForce RTX 3080",
-        "PairedFanSensor": null,
+        "PairedFanSensor": {
+          "Identifier": "NVApiWrapper/0-GA102-A/fan/1",
+          "IsHidden": false,
+          "Name": "Fan 2 - NVIDIA GeForce RTX 3080",
+          "NickName": "Fan 2 - NVIDIA GeForce RTX 3080"
+        },
         "SelectedCommandStepDown": 8.0,
         "SelectedCommandStepUp": 8.0,
         "SelectedFanCurve": {
-          "Deadband": 5.0,
-          "IdleTemperature": 60.0,
+          "CommandMode": 0,
+          "IgnoreHysteresisAtLimits": true,
           "IsHidden": false,
-          "LoadTemperature": 90.0,
-          "MaxFanSpeed": 90,
-          "MinFanSpeed": 40,
-          "Name": "Auto GPU",
-          "SelectedResponseTime": 10,
+          "MaximumCommand": 100,
+          "MaximumTemperature": 120,
+          "MinimumTemperature": 20,
+          "Name": "GPU",
+          "OneWayHysteresis": false,
+          "Points": [
+            "60,20",
+            "80,85"
+          ],
+          "SelectedHysteresis": 5.0,
+          "SelectedResponseTime": 5,
           "SelectedTempSource": {
-            "Identifier": "Time/GPU Average over 10 Seconds",
+            "Identifier": "Mix/Mix AVG CPU GPU",
             "IsHidden": false,
-            "Name": "GPU Average over 10 Seconds",
-            "SelectedTempSource": {
-              "Identifier": "NVApiWrapper/0-GA102-A/sensor/0",
-              "IsHidden": false,
-              "Name": "GPU",
-              "NickName": "GPU"
-            },
-            "SelectedTime": 10
-          },
-          "Step": 2.0
+            "Name": "Mix AVG CPU GPU",
+            "SelectedMixFunction": 0,
+            "SelectedSensors": [
+              {
+                "Identifier": "/intelcpu/0/temperature/24",
+                "IsHidden": false,
+                "Name": "CPU Package",
+                "NickName": "CPU Package"
+              },
+              {
+                "Identifier": "NVApiWrapper/0-GA102-A/sensor/0",
+                "IsHidden": false,
+                "Name": "GPU",
+                "NickName": "GPU"
+              }
+            ]
+          }
         },
         "SelectedOffset": 0,
-        "SelectedStart": 0,
-        "SelectedStop": 0
+        "SelectedStart": 49,
+        "SelectedStop": 46
       },
       {
+        "Calibration": [
+          [
+            40,
+            0
+          ],
+          [
+            50,
+            969
+          ],
+          [
+            60,
+            1468
+          ],
+          [
+            70,
+            1961
+          ],
+          [
+            80,
+            2462
+          ],
+          [
+            90,
+            2948
+          ],
+          [
+            100,
+            3323
+          ]
+        ],
         "Enable": true,
         "ForceApply": false,
         "Identifier": "NVApiWrapper/0-GA102-A/control/0",
@@ -481,31 +951,44 @@
         "SelectedCommandStepDown": 8.0,
         "SelectedCommandStepUp": 8.0,
         "SelectedFanCurve": {
-          "Deadband": 5.0,
-          "IdleTemperature": 60.0,
+          "CommandMode": 0,
+          "IgnoreHysteresisAtLimits": true,
           "IsHidden": false,
-          "LoadTemperature": 90.0,
-          "MaxFanSpeed": 90,
-          "MinFanSpeed": 40,
-          "Name": "Auto GPU",
-          "SelectedResponseTime": 10,
+          "MaximumCommand": 100,
+          "MaximumTemperature": 120,
+          "MinimumTemperature": 20,
+          "Name": "GPU",
+          "OneWayHysteresis": false,
+          "Points": [
+            "60,20",
+            "80,85"
+          ],
+          "SelectedHysteresis": 5.0,
+          "SelectedResponseTime": 5,
           "SelectedTempSource": {
-            "Identifier": "Time/GPU Average over 10 Seconds",
+            "Identifier": "Mix/Mix AVG CPU GPU",
             "IsHidden": false,
-            "Name": "GPU Average over 10 Seconds",
-            "SelectedTempSource": {
-              "Identifier": "NVApiWrapper/0-GA102-A/sensor/0",
-              "IsHidden": false,
-              "Name": "GPU",
-              "NickName": "GPU"
-            },
-            "SelectedTime": 10
-          },
-          "Step": 2.0
+            "Name": "Mix AVG CPU GPU",
+            "SelectedMixFunction": 0,
+            "SelectedSensors": [
+              {
+                "Identifier": "/intelcpu/0/temperature/24",
+                "IsHidden": false,
+                "Name": "CPU Package",
+                "NickName": "CPU Package"
+              },
+              {
+                "Identifier": "NVApiWrapper/0-GA102-A/sensor/0",
+                "IsHidden": false,
+                "Name": "GPU",
+                "NickName": "GPU"
+              }
+            ]
+          }
         },
         "SelectedOffset": 0,
-        "SelectedStart": 45,
-        "SelectedStop": 42
+        "SelectedStart": 49,
+        "SelectedStop": 46
       }
     ],
     "CustomSensors": [
@@ -866,13 +1349,16 @@
     ],
     "FanCurves": [
       {
+        "CommandMode": 0,
         "IsHidden": false,
         "Name": "PSU Aux",
         "Percent": 25.0
       },
       {
+        "CommandMode": 0,
         "IgnoreHysteresisAtLimits": true,
         "IsHidden": false,
+        "MaximumCommand": 100,
         "MaximumTemperature": 120,
         "MinimumTemperature": 20,
         "Name": "CPU Curve",
@@ -884,15 +1370,175 @@
         "SelectedHysteresis": 5.0,
         "SelectedResponseTime": 5,
         "SelectedTempSource": {
-          "Identifier": "/intelcpu/0/temperature/24",
+          "Identifier": "Time/CPU Average over 10 Seconds",
           "IsHidden": false,
-          "Name": "CPU Package",
-          "NickName": "CPU Package"
+          "Name": "CPU Average over 10 Seconds",
+          "SelectedTempSource": {
+            "Identifier": "Mix/Mix CPU Core Average",
+            "IsHidden": false,
+            "Name": "Mix CPU Core Average",
+            "SelectedMixFunction": 0,
+            "SelectedSensors": [
+              {
+                "Identifier": "/intelcpu/0/temperature/0",
+                "IsHidden": false,
+                "Name": "CPU Core #1",
+                "NickName": "CPU Core #1"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/1",
+                "IsHidden": false,
+                "Name": "CPU Core #2",
+                "NickName": "CPU Core #2"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/2",
+                "IsHidden": false,
+                "Name": "CPU Core #3",
+                "NickName": "CPU Core #3"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/3",
+                "IsHidden": false,
+                "Name": "CPU Core #4",
+                "NickName": "CPU Core #4"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/4",
+                "IsHidden": false,
+                "Name": "CPU Core #5",
+                "NickName": "CPU Core #5"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/5",
+                "IsHidden": false,
+                "Name": "CPU Core #6",
+                "NickName": "CPU Core #6"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/6",
+                "IsHidden": false,
+                "Name": "CPU Core #7",
+                "NickName": "CPU Core #7"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/7",
+                "IsHidden": false,
+                "Name": "CPU Core #8",
+                "NickName": "CPU Core #8"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/8",
+                "IsHidden": false,
+                "Name": "CPU Core #9",
+                "NickName": "CPU Core #9"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/9",
+                "IsHidden": false,
+                "Name": "CPU Core #10",
+                "NickName": "CPU Core #10"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/10",
+                "IsHidden": false,
+                "Name": "CPU Core #11",
+                "NickName": "CPU Core #11"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/11",
+                "IsHidden": false,
+                "Name": "CPU Core #12",
+                "NickName": "CPU Core #12"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/12",
+                "IsHidden": false,
+                "Name": "CPU Core #13",
+                "NickName": "CPU Core #13"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/13",
+                "IsHidden": false,
+                "Name": "CPU Core #14",
+                "NickName": "CPU Core #14"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/14",
+                "IsHidden": false,
+                "Name": "CPU Core #15",
+                "NickName": "CPU Core #15"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/15",
+                "IsHidden": false,
+                "Name": "CPU Core #16",
+                "NickName": "CPU Core #16"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/16",
+                "IsHidden": false,
+                "Name": "CPU Core #17",
+                "NickName": "CPU Core #17"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/17",
+                "IsHidden": false,
+                "Name": "CPU Core #18",
+                "NickName": "CPU Core #18"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/18",
+                "IsHidden": false,
+                "Name": "CPU Core #19",
+                "NickName": "CPU Core #19"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/19",
+                "IsHidden": false,
+                "Name": "CPU Core #20",
+                "NickName": "CPU Core #20"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/20",
+                "IsHidden": false,
+                "Name": "CPU Core #21",
+                "NickName": "CPU Core #21"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/21",
+                "IsHidden": false,
+                "Name": "CPU Core #22",
+                "NickName": "CPU Core #22"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/22",
+                "IsHidden": false,
+                "Name": "CPU Core #23",
+                "NickName": "CPU Core #23"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/23",
+                "IsHidden": false,
+                "Name": "CPU Core #24",
+                "NickName": "CPU Core #24"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/24",
+                "IsHidden": false,
+                "Name": "CPU Package",
+                "NickName": "CPU Package"
+              }
+            ]
+          },
+          "SelectedTime": 10
         }
       },
       {
+        "CommandMode": 0,
         "IgnoreHysteresisAtLimits": true,
         "IsHidden": false,
+        "MaximumCommand": 100,
         "MaximumTemperature": 120,
         "MinimumTemperature": 20,
         "Name": "Case CPU ",
@@ -904,15 +1550,175 @@
         "SelectedHysteresis": 5.0,
         "SelectedResponseTime": 5,
         "SelectedTempSource": {
-          "Identifier": "/intelcpu/0/temperature/24",
+          "Identifier": "Time/CPU Average over 10 Seconds",
           "IsHidden": false,
-          "Name": "CPU Package",
-          "NickName": "CPU Package"
+          "Name": "CPU Average over 10 Seconds",
+          "SelectedTempSource": {
+            "Identifier": "Mix/Mix CPU Core Average",
+            "IsHidden": false,
+            "Name": "Mix CPU Core Average",
+            "SelectedMixFunction": 0,
+            "SelectedSensors": [
+              {
+                "Identifier": "/intelcpu/0/temperature/0",
+                "IsHidden": false,
+                "Name": "CPU Core #1",
+                "NickName": "CPU Core #1"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/1",
+                "IsHidden": false,
+                "Name": "CPU Core #2",
+                "NickName": "CPU Core #2"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/2",
+                "IsHidden": false,
+                "Name": "CPU Core #3",
+                "NickName": "CPU Core #3"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/3",
+                "IsHidden": false,
+                "Name": "CPU Core #4",
+                "NickName": "CPU Core #4"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/4",
+                "IsHidden": false,
+                "Name": "CPU Core #5",
+                "NickName": "CPU Core #5"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/5",
+                "IsHidden": false,
+                "Name": "CPU Core #6",
+                "NickName": "CPU Core #6"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/6",
+                "IsHidden": false,
+                "Name": "CPU Core #7",
+                "NickName": "CPU Core #7"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/7",
+                "IsHidden": false,
+                "Name": "CPU Core #8",
+                "NickName": "CPU Core #8"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/8",
+                "IsHidden": false,
+                "Name": "CPU Core #9",
+                "NickName": "CPU Core #9"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/9",
+                "IsHidden": false,
+                "Name": "CPU Core #10",
+                "NickName": "CPU Core #10"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/10",
+                "IsHidden": false,
+                "Name": "CPU Core #11",
+                "NickName": "CPU Core #11"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/11",
+                "IsHidden": false,
+                "Name": "CPU Core #12",
+                "NickName": "CPU Core #12"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/12",
+                "IsHidden": false,
+                "Name": "CPU Core #13",
+                "NickName": "CPU Core #13"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/13",
+                "IsHidden": false,
+                "Name": "CPU Core #14",
+                "NickName": "CPU Core #14"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/14",
+                "IsHidden": false,
+                "Name": "CPU Core #15",
+                "NickName": "CPU Core #15"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/15",
+                "IsHidden": false,
+                "Name": "CPU Core #16",
+                "NickName": "CPU Core #16"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/16",
+                "IsHidden": false,
+                "Name": "CPU Core #17",
+                "NickName": "CPU Core #17"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/17",
+                "IsHidden": false,
+                "Name": "CPU Core #18",
+                "NickName": "CPU Core #18"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/18",
+                "IsHidden": false,
+                "Name": "CPU Core #19",
+                "NickName": "CPU Core #19"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/19",
+                "IsHidden": false,
+                "Name": "CPU Core #20",
+                "NickName": "CPU Core #20"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/20",
+                "IsHidden": false,
+                "Name": "CPU Core #21",
+                "NickName": "CPU Core #21"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/21",
+                "IsHidden": false,
+                "Name": "CPU Core #22",
+                "NickName": "CPU Core #22"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/22",
+                "IsHidden": false,
+                "Name": "CPU Core #23",
+                "NickName": "CPU Core #23"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/23",
+                "IsHidden": false,
+                "Name": "CPU Core #24",
+                "NickName": "CPU Core #24"
+              },
+              {
+                "Identifier": "/intelcpu/0/temperature/24",
+                "IsHidden": false,
+                "Name": "CPU Package",
+                "NickName": "CPU Package"
+              }
+            ]
+          },
+          "SelectedTime": 10
         }
       },
       {
+        "CommandMode": 0,
         "IgnoreHysteresisAtLimits": true,
         "IsHidden": false,
+        "MaximumCommand": 100,
         "MaximumTemperature": 120,
         "MinimumTemperature": 20,
         "Name": "Case GPU",
@@ -924,642 +1730,103 @@
         "SelectedHysteresis": 5.0,
         "SelectedResponseTime": 5,
         "SelectedTempSource": {
-          "Identifier": "NVApiWrapper/0-GA102-A/sensor/0",
+          "Identifier": "Mix/Mix AVG CPU GPU",
           "IsHidden": false,
-          "Name": "GPU",
-          "NickName": "GPU"
+          "Name": "Mix AVG CPU GPU",
+          "SelectedMixFunction": 0,
+          "SelectedSensors": [
+            {
+              "Identifier": "/intelcpu/0/temperature/24",
+              "IsHidden": false,
+              "Name": "CPU Package",
+              "NickName": "CPU Package"
+            },
+            {
+              "Identifier": "NVApiWrapper/0-GA102-A/sensor/0",
+              "IsHidden": false,
+              "Name": "GPU",
+              "NickName": "GPU"
+            }
+          ]
         }
       },
       {
+        "CommandMode": 0,
         "IgnoreHysteresisAtLimits": true,
         "IsHidden": false,
+        "MaximumCommand": 100,
         "MaximumTemperature": 120,
         "MinimumTemperature": 20,
         "Name": "GPU",
         "OneWayHysteresis": false,
         "Points": [
-          "50,40",
+          "60,20",
           "80,85"
         ],
         "SelectedHysteresis": 5.0,
         "SelectedResponseTime": 5,
         "SelectedTempSource": {
-          "Identifier": "NVApiWrapper/0-GA102-A/sensor/0",
+          "Identifier": "Mix/Mix AVG CPU GPU",
           "IsHidden": false,
-          "Name": "GPU",
-          "NickName": "GPU"
+          "Name": "Mix AVG CPU GPU",
+          "SelectedMixFunction": 0,
+          "SelectedSensors": [
+            {
+              "Identifier": "/intelcpu/0/temperature/24",
+              "IsHidden": false,
+              "Name": "CPU Package",
+              "NickName": "CPU Package"
+            },
+            {
+              "Identifier": "NVApiWrapper/0-GA102-A/sensor/0",
+              "IsHidden": false,
+              "Name": "GPU",
+              "NickName": "GPU"
+            }
+          ]
         }
       },
       {
+        "CommandMode": 0,
         "IsHidden": false,
         "Name": "Flat",
-        "Percent": 40.0
+        "Percent": 50.0
       },
       {
-        "Deadband": 5.0,
-        "IdleTemperature": 60.0,
+        "CommandMode": 0,
+        "IgnoreHysteresisAtLimits": true,
         "IsHidden": false,
-        "LoadTemperature": 90.0,
-        "MaxFanSpeed": 90,
-        "MinFanSpeed": 40,
-        "Name": "Auto GPU",
-        "SelectedResponseTime": 10,
-        "SelectedTempSource": {
-          "Identifier": "Time/GPU Average over 10 Seconds",
-          "IsHidden": false,
-          "Name": "GPU Average over 10 Seconds",
-          "SelectedTempSource": {
-            "Identifier": "NVApiWrapper/0-GA102-A/sensor/0",
-            "IsHidden": false,
-            "Name": "GPU",
-            "NickName": "GPU"
-          },
-          "SelectedTime": 10
-        },
-        "Step": 2.0
-      },
-      {
-        "Deadband": 5.0,
-        "IdleTemperature": 60.0,
-        "IsHidden": false,
-        "LoadTemperature": 90.0,
-        "MaxFanSpeed": 95,
-        "MinFanSpeed": 10,
-        "Name": "Auto GPU Case",
-        "SelectedResponseTime": 10,
-        "SelectedTempSource": {
-          "Identifier": "Time/GPU Average over 10 Seconds",
-          "IsHidden": false,
-          "Name": "GPU Average over 10 Seconds",
-          "SelectedTempSource": {
-            "Identifier": "NVApiWrapper/0-GA102-A/sensor/0",
-            "IsHidden": false,
-            "Name": "GPU",
-            "NickName": "GPU"
-          },
-          "SelectedTime": 10
-        },
-        "Step": 2.0
-      },
-      {
-        "Deadband": 5.0,
-        "IdleTemperature": 55.0,
-        "IsHidden": false,
-        "LoadTemperature": 90.0,
-        "MaxFanSpeed": 100,
-        "MinFanSpeed": 20,
-        "Name": "Auto CPU",
-        "SelectedResponseTime": 10,
-        "SelectedTempSource": {
-          "Identifier": "Time/CPU Average over 10 Seconds",
-          "IsHidden": false,
-          "Name": "CPU Average over 10 Seconds",
-          "SelectedTempSource": {
-            "Identifier": "Mix/Mix CPU Core Average",
-            "IsHidden": false,
-            "Name": "Mix CPU Core Average",
-            "SelectedMixFunction": 0,
-            "SelectedSensors": [
-              {
-                "Identifier": "/intelcpu/0/temperature/0",
-                "IsHidden": false,
-                "Name": "CPU Core #1",
-                "NickName": "CPU Core #1"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/1",
-                "IsHidden": false,
-                "Name": "CPU Core #2",
-                "NickName": "CPU Core #2"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/2",
-                "IsHidden": false,
-                "Name": "CPU Core #3",
-                "NickName": "CPU Core #3"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/3",
-                "IsHidden": false,
-                "Name": "CPU Core #4",
-                "NickName": "CPU Core #4"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/4",
-                "IsHidden": false,
-                "Name": "CPU Core #5",
-                "NickName": "CPU Core #5"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/5",
-                "IsHidden": false,
-                "Name": "CPU Core #6",
-                "NickName": "CPU Core #6"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/6",
-                "IsHidden": false,
-                "Name": "CPU Core #7",
-                "NickName": "CPU Core #7"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/7",
-                "IsHidden": false,
-                "Name": "CPU Core #8",
-                "NickName": "CPU Core #8"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/8",
-                "IsHidden": false,
-                "Name": "CPU Core #9",
-                "NickName": "CPU Core #9"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/9",
-                "IsHidden": false,
-                "Name": "CPU Core #10",
-                "NickName": "CPU Core #10"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/10",
-                "IsHidden": false,
-                "Name": "CPU Core #11",
-                "NickName": "CPU Core #11"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/11",
-                "IsHidden": false,
-                "Name": "CPU Core #12",
-                "NickName": "CPU Core #12"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/12",
-                "IsHidden": false,
-                "Name": "CPU Core #13",
-                "NickName": "CPU Core #13"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/13",
-                "IsHidden": false,
-                "Name": "CPU Core #14",
-                "NickName": "CPU Core #14"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/14",
-                "IsHidden": false,
-                "Name": "CPU Core #15",
-                "NickName": "CPU Core #15"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/15",
-                "IsHidden": false,
-                "Name": "CPU Core #16",
-                "NickName": "CPU Core #16"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/16",
-                "IsHidden": false,
-                "Name": "CPU Core #17",
-                "NickName": "CPU Core #17"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/17",
-                "IsHidden": false,
-                "Name": "CPU Core #18",
-                "NickName": "CPU Core #18"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/18",
-                "IsHidden": false,
-                "Name": "CPU Core #19",
-                "NickName": "CPU Core #19"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/19",
-                "IsHidden": false,
-                "Name": "CPU Core #20",
-                "NickName": "CPU Core #20"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/20",
-                "IsHidden": false,
-                "Name": "CPU Core #21",
-                "NickName": "CPU Core #21"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/21",
-                "IsHidden": false,
-                "Name": "CPU Core #22",
-                "NickName": "CPU Core #22"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/22",
-                "IsHidden": false,
-                "Name": "CPU Core #23",
-                "NickName": "CPU Core #23"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/23",
-                "IsHidden": false,
-                "Name": "CPU Core #24",
-                "NickName": "CPU Core #24"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/24",
-                "IsHidden": false,
-                "Name": "CPU Package",
-                "NickName": "CPU Package"
-              }
-            ]
-          },
-          "SelectedTime": 10
-        },
-        "Step": 2.0
-      },
-      {
-        "Deadband": 5.0,
-        "IdleTemperature": 55.0,
-        "IsHidden": false,
-        "LoadTemperature": 90.0,
-        "MaxFanSpeed": 45,
-        "MinFanSpeed": 10,
-        "Name": "Auto CPU Case",
-        "SelectedResponseTime": 10,
-        "SelectedTempSource": {
-          "Identifier": "Time/CPU Average over 10 Seconds",
-          "IsHidden": false,
-          "Name": "CPU Average over 10 Seconds",
-          "SelectedTempSource": {
-            "Identifier": "Mix/Mix CPU Core Average",
-            "IsHidden": false,
-            "Name": "Mix CPU Core Average",
-            "SelectedMixFunction": 0,
-            "SelectedSensors": [
-              {
-                "Identifier": "/intelcpu/0/temperature/0",
-                "IsHidden": false,
-                "Name": "CPU Core #1",
-                "NickName": "CPU Core #1"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/1",
-                "IsHidden": false,
-                "Name": "CPU Core #2",
-                "NickName": "CPU Core #2"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/2",
-                "IsHidden": false,
-                "Name": "CPU Core #3",
-                "NickName": "CPU Core #3"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/3",
-                "IsHidden": false,
-                "Name": "CPU Core #4",
-                "NickName": "CPU Core #4"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/4",
-                "IsHidden": false,
-                "Name": "CPU Core #5",
-                "NickName": "CPU Core #5"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/5",
-                "IsHidden": false,
-                "Name": "CPU Core #6",
-                "NickName": "CPU Core #6"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/6",
-                "IsHidden": false,
-                "Name": "CPU Core #7",
-                "NickName": "CPU Core #7"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/7",
-                "IsHidden": false,
-                "Name": "CPU Core #8",
-                "NickName": "CPU Core #8"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/8",
-                "IsHidden": false,
-                "Name": "CPU Core #9",
-                "NickName": "CPU Core #9"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/9",
-                "IsHidden": false,
-                "Name": "CPU Core #10",
-                "NickName": "CPU Core #10"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/10",
-                "IsHidden": false,
-                "Name": "CPU Core #11",
-                "NickName": "CPU Core #11"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/11",
-                "IsHidden": false,
-                "Name": "CPU Core #12",
-                "NickName": "CPU Core #12"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/12",
-                "IsHidden": false,
-                "Name": "CPU Core #13",
-                "NickName": "CPU Core #13"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/13",
-                "IsHidden": false,
-                "Name": "CPU Core #14",
-                "NickName": "CPU Core #14"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/14",
-                "IsHidden": false,
-                "Name": "CPU Core #15",
-                "NickName": "CPU Core #15"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/15",
-                "IsHidden": false,
-                "Name": "CPU Core #16",
-                "NickName": "CPU Core #16"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/16",
-                "IsHidden": false,
-                "Name": "CPU Core #17",
-                "NickName": "CPU Core #17"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/17",
-                "IsHidden": false,
-                "Name": "CPU Core #18",
-                "NickName": "CPU Core #18"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/18",
-                "IsHidden": false,
-                "Name": "CPU Core #19",
-                "NickName": "CPU Core #19"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/19",
-                "IsHidden": false,
-                "Name": "CPU Core #20",
-                "NickName": "CPU Core #20"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/20",
-                "IsHidden": false,
-                "Name": "CPU Core #21",
-                "NickName": "CPU Core #21"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/21",
-                "IsHidden": false,
-                "Name": "CPU Core #22",
-                "NickName": "CPU Core #22"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/22",
-                "IsHidden": false,
-                "Name": "CPU Core #23",
-                "NickName": "CPU Core #23"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/23",
-                "IsHidden": false,
-                "Name": "CPU Core #24",
-                "NickName": "CPU Core #24"
-              },
-              {
-                "Identifier": "/intelcpu/0/temperature/24",
-                "IsHidden": false,
-                "Name": "CPU Package",
-                "NickName": "CPU Package"
-              }
-            ]
-          },
-          "SelectedTime": 10
-        },
-        "Step": 2.0
-      },
-      {
-        "IsHidden": false,
+        "MaximumCommand": 100,
+        "MaximumTemperature": 120,
+        "MinimumTemperature": 20,
         "Name": "Mix Case",
-        "SelectedFanCurves": [
-          {
-            "Deadband": 5.0,
-            "IdleTemperature": 55.0,
-            "IsHidden": false,
-            "LoadTemperature": 90.0,
-            "MaxFanSpeed": 45,
-            "MinFanSpeed": 10,
-            "Name": "Auto CPU Case",
-            "SelectedResponseTime": 10,
-            "SelectedTempSource": {
-              "Identifier": "Time/CPU Average over 10 Seconds",
-              "IsHidden": false,
-              "Name": "CPU Average over 10 Seconds",
-              "SelectedTempSource": {
-                "Identifier": "Mix/Mix CPU Core Average",
-                "IsHidden": false,
-                "Name": "Mix CPU Core Average",
-                "SelectedMixFunction": 0,
-                "SelectedSensors": [
-                  {
-                    "Identifier": "/intelcpu/0/temperature/0",
-                    "IsHidden": false,
-                    "Name": "CPU Core #1",
-                    "NickName": "CPU Core #1"
-                  },
-                  {
-                    "Identifier": "/intelcpu/0/temperature/1",
-                    "IsHidden": false,
-                    "Name": "CPU Core #2",
-                    "NickName": "CPU Core #2"
-                  },
-                  {
-                    "Identifier": "/intelcpu/0/temperature/2",
-                    "IsHidden": false,
-                    "Name": "CPU Core #3",
-                    "NickName": "CPU Core #3"
-                  },
-                  {
-                    "Identifier": "/intelcpu/0/temperature/3",
-                    "IsHidden": false,
-                    "Name": "CPU Core #4",
-                    "NickName": "CPU Core #4"
-                  },
-                  {
-                    "Identifier": "/intelcpu/0/temperature/4",
-                    "IsHidden": false,
-                    "Name": "CPU Core #5",
-                    "NickName": "CPU Core #5"
-                  },
-                  {
-                    "Identifier": "/intelcpu/0/temperature/5",
-                    "IsHidden": false,
-                    "Name": "CPU Core #6",
-                    "NickName": "CPU Core #6"
-                  },
-                  {
-                    "Identifier": "/intelcpu/0/temperature/6",
-                    "IsHidden": false,
-                    "Name": "CPU Core #7",
-                    "NickName": "CPU Core #7"
-                  },
-                  {
-                    "Identifier": "/intelcpu/0/temperature/7",
-                    "IsHidden": false,
-                    "Name": "CPU Core #8",
-                    "NickName": "CPU Core #8"
-                  },
-                  {
-                    "Identifier": "/intelcpu/0/temperature/8",
-                    "IsHidden": false,
-                    "Name": "CPU Core #9",
-                    "NickName": "CPU Core #9"
-                  },
-                  {
-                    "Identifier": "/intelcpu/0/temperature/9",
-                    "IsHidden": false,
-                    "Name": "CPU Core #10",
-                    "NickName": "CPU Core #10"
-                  },
-                  {
-                    "Identifier": "/intelcpu/0/temperature/10",
-                    "IsHidden": false,
-                    "Name": "CPU Core #11",
-                    "NickName": "CPU Core #11"
-                  },
-                  {
-                    "Identifier": "/intelcpu/0/temperature/11",
-                    "IsHidden": false,
-                    "Name": "CPU Core #12",
-                    "NickName": "CPU Core #12"
-                  },
-                  {
-                    "Identifier": "/intelcpu/0/temperature/12",
-                    "IsHidden": false,
-                    "Name": "CPU Core #13",
-                    "NickName": "CPU Core #13"
-                  },
-                  {
-                    "Identifier": "/intelcpu/0/temperature/13",
-                    "IsHidden": false,
-                    "Name": "CPU Core #14",
-                    "NickName": "CPU Core #14"
-                  },
-                  {
-                    "Identifier": "/intelcpu/0/temperature/14",
-                    "IsHidden": false,
-                    "Name": "CPU Core #15",
-                    "NickName": "CPU Core #15"
-                  },
-                  {
-                    "Identifier": "/intelcpu/0/temperature/15",
-                    "IsHidden": false,
-                    "Name": "CPU Core #16",
-                    "NickName": "CPU Core #16"
-                  },
-                  {
-                    "Identifier": "/intelcpu/0/temperature/16",
-                    "IsHidden": false,
-                    "Name": "CPU Core #17",
-                    "NickName": "CPU Core #17"
-                  },
-                  {
-                    "Identifier": "/intelcpu/0/temperature/17",
-                    "IsHidden": false,
-                    "Name": "CPU Core #18",
-                    "NickName": "CPU Core #18"
-                  },
-                  {
-                    "Identifier": "/intelcpu/0/temperature/18",
-                    "IsHidden": false,
-                    "Name": "CPU Core #19",
-                    "NickName": "CPU Core #19"
-                  },
-                  {
-                    "Identifier": "/intelcpu/0/temperature/19",
-                    "IsHidden": false,
-                    "Name": "CPU Core #20",
-                    "NickName": "CPU Core #20"
-                  },
-                  {
-                    "Identifier": "/intelcpu/0/temperature/20",
-                    "IsHidden": false,
-                    "Name": "CPU Core #21",
-                    "NickName": "CPU Core #21"
-                  },
-                  {
-                    "Identifier": "/intelcpu/0/temperature/21",
-                    "IsHidden": false,
-                    "Name": "CPU Core #22",
-                    "NickName": "CPU Core #22"
-                  },
-                  {
-                    "Identifier": "/intelcpu/0/temperature/22",
-                    "IsHidden": false,
-                    "Name": "CPU Core #23",
-                    "NickName": "CPU Core #23"
-                  },
-                  {
-                    "Identifier": "/intelcpu/0/temperature/23",
-                    "IsHidden": false,
-                    "Name": "CPU Core #24",
-                    "NickName": "CPU Core #24"
-                  },
-                  {
-                    "Identifier": "/intelcpu/0/temperature/24",
-                    "IsHidden": false,
-                    "Name": "CPU Package",
-                    "NickName": "CPU Package"
-                  }
-                ]
-              },
-              "SelectedTime": 10
-            },
-            "Step": 2.0
-          },
-          {
-            "Deadband": 5.0,
-            "IdleTemperature": 60.0,
-            "IsHidden": false,
-            "LoadTemperature": 90.0,
-            "MaxFanSpeed": 95,
-            "MinFanSpeed": 10,
-            "Name": "Auto GPU Case",
-            "SelectedResponseTime": 10,
-            "SelectedTempSource": {
-              "Identifier": "Time/GPU Average over 10 Seconds",
-              "IsHidden": false,
-              "Name": "GPU Average over 10 Seconds",
-              "SelectedTempSource": {
-                "Identifier": "NVApiWrapper/0-GA102-A/sensor/0",
-                "IsHidden": false,
-                "Name": "GPU",
-                "NickName": "GPU"
-              },
-              "SelectedTime": 10
-            },
-            "Step": 2.0
-          }
+        "OneWayHysteresis": false,
+        "Points": [
+          "60,20",
+          "80,80"
         ],
-        "SelectedMixFunction": 0
-      },
-      {
-        "IsHidden": false,
-        "Name": "0%",
-        "Percent": 0.0
+        "SelectedHysteresis": 2.0,
+        "SelectedResponseTime": 1,
+        "SelectedTempSource": {
+          "Identifier": "Mix/Mix AVG CPU GPU",
+          "IsHidden": false,
+          "Name": "Mix AVG CPU GPU",
+          "SelectedMixFunction": 0,
+          "SelectedSensors": [
+            {
+              "Identifier": "/intelcpu/0/temperature/24",
+              "IsHidden": false,
+              "Name": "CPU Package",
+              "NickName": "CPU Package"
+            },
+            {
+              "Identifier": "NVApiWrapper/0-GA102-A/sensor/0",
+              "IsHidden": false,
+              "Name": "GPU",
+              "NickName": "GPU"
+            }
+          ]
+        }
       }
     ],
     "FanSensors": [
@@ -1618,13 +1885,15 @@
         "NickName": "Control 1 - NVIDIA GeForce RTX 3080"
       }
     ],
+    "HideCalibration": false,
     "HideFanSpeedCards": true,
     "HorizontalUIOrientation": false,
     "PrimaryColor": "#FF607D8B",
     "SecondaryColor": "#FFAEEA00",
-    "SelectedTheme": "Dark",
+    "SelectedTheme": "Inherit",
     "ShowHiddenCards": false,
     "SyncThemeWithWindows": true,
+    "SyncTrayIconColorWithWindows": true,
     "TemperatureSensors": [],
     "TrayIconColor": "#FFFFFFFF",
     "TrayIcons": []
