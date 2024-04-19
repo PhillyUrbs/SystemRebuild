@@ -1,5 +1,5 @@
 {
-  "__VERSION__": "186",
+  "__VERSION__": "187",
   "Main": {
     "Controls": [
       {
@@ -872,7 +872,7 @@
           "Name": "GPU",
           "OneWayHysteresis": false,
           "Points": [
-            "60,20",
+            "60,50",
             "80,85"
           ],
           "SelectedHysteresis": 5.0,
@@ -960,7 +960,7 @@
           "Name": "GPU",
           "OneWayHysteresis": false,
           "Points": [
-            "60,20",
+            "60,50",
             "80,85"
           ],
           "SelectedHysteresis": 5.0,
@@ -1760,7 +1760,7 @@
         "Name": "GPU",
         "OneWayHysteresis": false,
         "Points": [
-          "60,20",
+          "60,50",
           "80,85"
         ],
         "SelectedHysteresis": 5.0,
