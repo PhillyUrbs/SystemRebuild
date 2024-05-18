@@ -29,8 +29,6 @@ $wingetApps = @(
 
 <#
 Leftovers
-    Battle.net Launcher https://www.blizzard.com/en-us/download/
-    .\Battle.net-Setup.exe --lang=enUS --installpath="C:\Program Files (x86)\Battle.net"
     BypassPaywall edge extension https://gitlab.com/magnolia1234/bypass-paywalls-chrome-clean/-/releases
         [DONE] allow extension install via reg key
         add extension to edge and allow auto updates. Not sure if edge extension developer mode is needed. 
