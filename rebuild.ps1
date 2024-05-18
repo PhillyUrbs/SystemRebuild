@@ -18,7 +18,6 @@ $wingetApps = @(
     "Prusa3D.PrusaSlicer",
     "Rem0o.FanControl",
     "RazerInc.RazerInstaller",
-    "SlackTechnologies.Slack",
     "Valve.Steam", 
     "Yealink.YealinkUSBConnect",
     "9N4WGH0Z6VHQ", # Win11 HEVC Encoding
