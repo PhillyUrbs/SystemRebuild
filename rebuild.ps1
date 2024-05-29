@@ -3,7 +3,6 @@
 # Define the array of winget applications to be installed
 $wingetApps = @(
     "Bitwarden.Bitwarden",
-    #"CreativeTechnology.CreativeApp",
     "Discord.Discord",
     "ElectronicArts.EADesktop",
     "EpicGames.EpicGamesLauncher",
@@ -13,7 +12,6 @@ $wingetApps = @(
     "Microsoft.Office",
     "Microsoft.VisualStudioCode.Insiders",
     #"mtkennerly.ludusavi", # Game Backups
-    #"Nvidia.GeForceExperience",
     "Plex.Plex",
     "Prusa3D.PrusaSlicer",
     "Rem0o.FanControl",
