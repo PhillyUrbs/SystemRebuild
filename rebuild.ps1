@@ -22,9 +22,10 @@ $wingetApps = @(
     "Yealink.YealinkUSBConnect",
     "9N4WGH0Z6VHQ", # Win11 HEVC Encoding
     "9P1HQ5TQZMGD", # Microsoft Loop
+    "9NF8H0H7WMLT", #NVIDIA Control Panel
     #"XP8K0HKJFRXGCK", # oh-my-posh
     "9PLDPG46G47Z", # Xbox Insider Hub
-    "9NBLGGH30XJ3" # Xbox Accessories
+    "9NBLGGH30XJ3", # Xbox Accessories
     "9N1F85V9T8BN" # Windows App
 )
 
