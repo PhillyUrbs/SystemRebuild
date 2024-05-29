@@ -25,6 +25,7 @@ $wingetApps = @(
     #"XP8K0HKJFRXGCK", # oh-my-posh
     "9PLDPG46G47Z", # Xbox Insider Hub
     "9NBLGGH30XJ3" # Xbox Accessories
+    "9N1F85V9T8BN" # Windows App
 )
 
 <#
@@ -50,9 +51,13 @@ Invoke-WebRequest -Uri "https://us.battle.net/download/getInstaller?os=win&insta
 Remove-Item -Path "Battle.net-Setup.exe"
 Remove-Item -Path "$env:PUBLIC\Desktop\Battle.net.lnk"
 
-
-# import registry changes from BypassPawall.reg and skip any prompts. 
-#reg import "./BypassPaywall.reg" /f  # Now handled by entries below
+<#
+# download the latest dll from https://github.com/Mourdraug/FanControl.AsusWMI/releases and place it in C:\Program Files\FanControl\Plugins
+$downloadUrl = "https://github.com/Mourdraug/FanControl.AsusWMI/releases/latest/download/FanControl.AsusWMI.dll"
+$downloadPath = "C:\Program Files\FanControl\Plugins\FanControl.AsusWMI.dll"
+Invoke-WebRequest -Uri $downloadUrl -OutFile $downloadPath
+Unblock-File $downloadPath
+#>
 
 # create the registry entries to install the BypassPaywall extension for Edge
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Edge\ExtensionInstallAllowlist" /v "1" /t REG_SZ /d "lkbebcjgcmobigpeffafkodonchffocl" /f
