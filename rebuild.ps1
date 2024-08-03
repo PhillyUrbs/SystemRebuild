@@ -18,7 +18,7 @@ $wingetApps = @(
     "RazerInc.RazerInstaller",
     "Valve.Steam", 
     "Yealink.YealinkUSBConnect",
-    "9N4WGH0Z6VHQ", # Win11 HEVC Encoding
+    #"9N4WGH0Z6VHQ", # Win11 HEVC Encoding (no longer working)
     "9P1HQ5TQZMGD", # Microsoft Loop
     "9NF8H0H7WMLT", #NVIDIA Control Panel
     #"XP8K0HKJFRXGCK", # oh-my-posh
