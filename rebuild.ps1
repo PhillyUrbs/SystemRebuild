@@ -79,7 +79,7 @@ net start "Razer Synapse Service"
 # Set power configuration to ultimate if it is a desktop. If it is a laptop, set power to balanced
 # Power Scheme GUID: e9a42b02-d5df-448d-aa00-03f14749eb61  (Ultimate Performance) 
 # Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
-if ((Get-WmiObject -Class Win32_ComputerSystem).PCSystemType -eq 1) {
+if ((Get-CimInstance -ClassName Win32_ComputerSystem).PCSystemType -eq 1) {
     powercfg -setactive e9a42b02-d5df-448d-aa00-03f14749eb61
 } else {
     powercfg -setactive 381b4222-f694-41f0-9685-ff5bb260df2e
