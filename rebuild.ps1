@@ -19,7 +19,7 @@ $wingetApps = @(
     "Valve.Steam", 
     "Yealink.YealinkUSBConnect",
     #"9N4WGH0Z6VHQ", # Win11 HEVC Encoding (no longer working)
-    "9P1HQ5TQZMGD", # Microsoft Loop
+    # "9P1HQ5TQZMGD", # Microsoft Loop
     "9NF8H0H7WMLT", #NVIDIA Control Panel
     #"XP8K0HKJFRXGCK", # oh-my-posh
     "9PLDPG46G47Z", # Xbox Insider Hub
@@ -75,3 +75,8 @@ net stop "Razer Game Manager Service"
 sc.exe config "Razer Game Manager Service" start= disabled
 net start "Razer Synapse Service"
 #>
+
+# Set power configuration to ultimate if it is a desktop. If it is a laptop, set power to balanced
+# Power Scheme GUID: e9a42b02-d5df-448d-aa00-03f14749eb61  (Ultimate Performance) 
+# Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
+
