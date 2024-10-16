@@ -10,6 +10,7 @@ $wingetApps = @(
     "GOG.Galaxy",
     "Microsoft.BingWallpaper",
     "Microsoft.Office",
+    "Microsoft.PowerShell",
     "Microsoft.VisualStudioCode.Insiders",
     #"mtkennerly.ludusavi", # Game Backups
     "Plex.Plex",
