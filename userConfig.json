@@ -1,5 +1,5 @@
 {
-  "__VERSION__": "187",
+  "__VERSION__": "207",
   "Main": {
     "Controls": [
       {
@@ -71,13 +71,13 @@
           "IgnoreHysteresisAtLimits": true,
           "IsHidden": false,
           "MaximumCommand": 100,
-          "MaximumTemperature": 120,
-          "MinimumTemperature": 20,
+          "MaximumTemperature": 120.0,
+          "MinimumTemperature": 20.0,
           "Name": "Mix Case",
           "OneWayHysteresis": false,
           "Points": [
-            "60,20",
-            "80,80"
+            "70,20",
+            "90,80"
           ],
           "SelectedHysteresis": 2.0,
           "SelectedResponseTime": 1,
@@ -171,8 +171,8 @@
           "IgnoreHysteresisAtLimits": true,
           "IsHidden": false,
           "MaximumCommand": 100,
-          "MaximumTemperature": 120,
-          "MinimumTemperature": 20,
+          "MaximumTemperature": 120.0,
+          "MinimumTemperature": 20.0,
           "Name": "CPU Curve",
           "OneWayHysteresis": false,
           "Points": [
@@ -493,12 +493,12 @@
           "IgnoreHysteresisAtLimits": true,
           "IsHidden": false,
           "MaximumCommand": 100,
-          "MaximumTemperature": 120,
-          "MinimumTemperature": 20,
+          "MaximumTemperature": 120.0,
+          "MinimumTemperature": 20.0,
           "Name": "Case GPU",
           "OneWayHysteresis": false,
           "Points": [
-            "65,20",
+            "70,20",
             "90,95"
           ],
           "SelectedHysteresis": 5.0,
@@ -616,12 +616,12 @@
           "IgnoreHysteresisAtLimits": true,
           "IsHidden": false,
           "MaximumCommand": 100,
-          "MaximumTemperature": 120,
-          "MinimumTemperature": 20,
+          "MaximumTemperature": 120.0,
+          "MinimumTemperature": 20.0,
           "Name": "Case CPU ",
           "OneWayHysteresis": false,
           "Points": [
-            "65,20",
+            "70,20",
             "90,95"
           ],
           "SelectedHysteresis": 5.0,
@@ -867,35 +867,27 @@
           "IgnoreHysteresisAtLimits": true,
           "IsHidden": false,
           "MaximumCommand": 100,
-          "MaximumTemperature": 120,
-          "MinimumTemperature": 20,
+          "MaximumTemperature": 120.0,
+          "MinimumTemperature": 20.0,
           "Name": "GPU",
           "OneWayHysteresis": false,
           "Points": [
-            "60,50",
-            "80,85"
+            "70,50",
+            "90,85"
           ],
           "SelectedHysteresis": 5.0,
           "SelectedResponseTime": 5,
           "SelectedTempSource": {
-            "Identifier": "Mix/Mix AVG CPU GPU",
+            "Identifier": "Time/GPU Average over 10 Seconds",
             "IsHidden": false,
-            "Name": "Mix AVG CPU GPU",
-            "SelectedMixFunction": 0,
-            "SelectedSensors": [
-              {
-                "Identifier": "/intelcpu/0/temperature/24",
-                "IsHidden": false,
-                "Name": "CPU Package",
-                "NickName": "CPU Package"
-              },
-              {
-                "Identifier": "NVApiWrapper/0-GA102-A/sensor/0",
-                "IsHidden": false,
-                "Name": "GPU",
-                "NickName": "GPU"
-              }
-            ]
+            "Name": "GPU Average over 10 Seconds",
+            "SelectedTempSource": {
+              "Identifier": "NVApiWrapper/0-GA102-A/sensor/0",
+              "IsHidden": false,
+              "Name": "GPU",
+              "NickName": "GPU"
+            },
+            "SelectedTime": 10
           }
         },
         "SelectedOffset": 0,
@@ -955,35 +947,27 @@
           "IgnoreHysteresisAtLimits": true,
           "IsHidden": false,
           "MaximumCommand": 100,
-          "MaximumTemperature": 120,
-          "MinimumTemperature": 20,
+          "MaximumTemperature": 120.0,
+          "MinimumTemperature": 20.0,
           "Name": "GPU",
           "OneWayHysteresis": false,
           "Points": [
-            "60,50",
-            "80,85"
+            "70,50",
+            "90,85"
           ],
           "SelectedHysteresis": 5.0,
           "SelectedResponseTime": 5,
           "SelectedTempSource": {
-            "Identifier": "Mix/Mix AVG CPU GPU",
+            "Identifier": "Time/GPU Average over 10 Seconds",
             "IsHidden": false,
-            "Name": "Mix AVG CPU GPU",
-            "SelectedMixFunction": 0,
-            "SelectedSensors": [
-              {
-                "Identifier": "/intelcpu/0/temperature/24",
-                "IsHidden": false,
-                "Name": "CPU Package",
-                "NickName": "CPU Package"
-              },
-              {
-                "Identifier": "NVApiWrapper/0-GA102-A/sensor/0",
-                "IsHidden": false,
-                "Name": "GPU",
-                "NickName": "GPU"
-              }
-            ]
+            "Name": "GPU Average over 10 Seconds",
+            "SelectedTempSource": {
+              "Identifier": "NVApiWrapper/0-GA102-A/sensor/0",
+              "IsHidden": false,
+              "Name": "GPU",
+              "NickName": "GPU"
+            },
+            "SelectedTime": 10
           }
         },
         "SelectedOffset": 0,
@@ -1347,6 +1331,7 @@
         "SelectedTime": 10
       }
     ],
+    "Fahrenheit": false,
     "FanCurves": [
       {
         "CommandMode": 0,
@@ -1359,8 +1344,8 @@
         "IgnoreHysteresisAtLimits": true,
         "IsHidden": false,
         "MaximumCommand": 100,
-        "MaximumTemperature": 120,
-        "MinimumTemperature": 20,
+        "MaximumTemperature": 120.0,
+        "MinimumTemperature": 20.0,
         "Name": "CPU Curve",
         "OneWayHysteresis": false,
         "Points": [
@@ -1539,12 +1524,12 @@
         "IgnoreHysteresisAtLimits": true,
         "IsHidden": false,
         "MaximumCommand": 100,
-        "MaximumTemperature": 120,
-        "MinimumTemperature": 20,
+        "MaximumTemperature": 120.0,
+        "MinimumTemperature": 20.0,
         "Name": "Case CPU ",
         "OneWayHysteresis": false,
         "Points": [
-          "65,20",
+          "70,20",
           "90,95"
         ],
         "SelectedHysteresis": 5.0,
@@ -1719,12 +1704,12 @@
         "IgnoreHysteresisAtLimits": true,
         "IsHidden": false,
         "MaximumCommand": 100,
-        "MaximumTemperature": 120,
-        "MinimumTemperature": 20,
+        "MaximumTemperature": 120.0,
+        "MinimumTemperature": 20.0,
         "Name": "Case GPU",
         "OneWayHysteresis": false,
         "Points": [
-          "65,20",
+          "70,20",
           "90,95"
         ],
         "SelectedHysteresis": 5.0,
@@ -1755,35 +1740,27 @@
         "IgnoreHysteresisAtLimits": true,
         "IsHidden": false,
         "MaximumCommand": 100,
-        "MaximumTemperature": 120,
-        "MinimumTemperature": 20,
+        "MaximumTemperature": 120.0,
+        "MinimumTemperature": 20.0,
         "Name": "GPU",
         "OneWayHysteresis": false,
         "Points": [
-          "60,50",
-          "80,85"
+          "70,50",
+          "90,85"
         ],
         "SelectedHysteresis": 5.0,
         "SelectedResponseTime": 5,
         "SelectedTempSource": {
-          "Identifier": "Mix/Mix AVG CPU GPU",
+          "Identifier": "Time/GPU Average over 10 Seconds",
           "IsHidden": false,
-          "Name": "Mix AVG CPU GPU",
-          "SelectedMixFunction": 0,
-          "SelectedSensors": [
-            {
-              "Identifier": "/intelcpu/0/temperature/24",
-              "IsHidden": false,
-              "Name": "CPU Package",
-              "NickName": "CPU Package"
-            },
-            {
-              "Identifier": "NVApiWrapper/0-GA102-A/sensor/0",
-              "IsHidden": false,
-              "Name": "GPU",
-              "NickName": "GPU"
-            }
-          ]
+          "Name": "GPU Average over 10 Seconds",
+          "SelectedTempSource": {
+            "Identifier": "NVApiWrapper/0-GA102-A/sensor/0",
+            "IsHidden": false,
+            "Name": "GPU",
+            "NickName": "GPU"
+          },
+          "SelectedTime": 10
         }
       },
       {
@@ -1797,13 +1774,13 @@
         "IgnoreHysteresisAtLimits": true,
         "IsHidden": false,
         "MaximumCommand": 100,
-        "MaximumTemperature": 120,
-        "MinimumTemperature": 20,
+        "MaximumTemperature": 120.0,
+        "MinimumTemperature": 20.0,
         "Name": "Mix Case",
         "OneWayHysteresis": false,
         "Points": [
-          "60,20",
-          "80,80"
+          "70,20",
+          "90,80"
         ],
         "SelectedHysteresis": 2.0,
         "SelectedResponseTime": 1,
@@ -1890,15 +1867,18 @@
     "HorizontalUIOrientation": false,
     "PrimaryColor": "#FF607D8B",
     "SecondaryColor": "#FFAEEA00",
-    "SelectedTheme": "Inherit",
+    "SelectedTheme": "",
     "ShowHiddenCards": false,
     "SyncThemeWithWindows": true,
     "SyncTrayIconColorWithWindows": true,
     "TemperatureSensors": [],
-    "TrayIconColor": "#FFFFFFFF",
+    "TrayIconColor": null,
     "TrayIcons": []
   },
   "Sensors": {
+    "AdlxWrapperSettings": {
+      "Enabled": false
+    },
     "DisabledPlugins": [],
     "DisableStorageSensors": true,
     "LibreHardwareMonitorSettings": {
@@ -1917,6 +1897,6 @@
       "Enabled": true,
       "ZeroRPMOverride": false
     },
-    "SensorCount": 77
+    "SensorCount": 78
   }
 }
