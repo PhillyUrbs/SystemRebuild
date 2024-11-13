@@ -65,6 +65,9 @@ reg add "HKLM\SOFTWARE\Policies\Microsoft\Edge\ExtensionInstallForcelist" /v "1"
 
 #need to install the extension manually from https://gitlab.com/magnolia1234/bypass-paywalls-chrome-clean/-/releases
 
+# Windows App point to SH environment
+reg add HKCU\Software\Microsoft\Windows365 /v Environment /t REG_DWORD /d 0
+
 # Remove Razer Game Manager Service as a Depenant service of Razer Synapse Service
 # reg import "./Razer.reg"
 
