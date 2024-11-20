@@ -59,6 +59,12 @@ Invoke-WebRequest -Uri $downloadUrl -OutFile $downloadPath
 Unblock-File $downloadPath
 #>
 
+# enable windows hotpatching
+if (-Not (Test-Path "HKLM:\SOFTWARE\Microsoft\PolicyManager\current\device\Update")) {
+    New-Item -Path "HKLM:\SOFTWARE\Microsoft\PolicyManager\current\device\Update" -Force
+}
+New-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\PolicyManager\current\device\Update" -Name "AllowRebootlessUpdates" -PropertyType DWord -Value 1 -Force
+
 # create the registry entries to install the BypassPaywall extension for Edge
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Edge\ExtensionInstallAllowlist" /v "1" /t REG_SZ /d "lkbebcjgcmobigpeffafkodonchffocl" /f
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Edge\ExtensionInstallForcelist" /v "1" /t REG_SZ /d "lkbebcjgcmobigpeffafkodonchffocl" /f
