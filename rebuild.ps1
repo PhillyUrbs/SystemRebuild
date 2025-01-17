@@ -46,10 +46,10 @@ foreach ($wingetApp in $wingetApps) {
 }
 
 # download and silently install the battle.net launcher. the download link is https://us.battle.net/download/getInstaller?os=win&installer=Battle.net-Setup.exe#/Battle.net-Setup.exe and the silent install switch is -s /quiet.
-Invoke-WebRequest -Uri "https://us.battle.net/download/getInstaller?os=win&installer=Battle.net-Setup.exe#/Battle.net-Setup.exe" -OutFile "Battle.net-Setup.exe"
-.\Battle.net-Setup.exe -s /quiet
-Remove-Item -Path "Battle.net-Setup.exe"
-Remove-Item -Path "$env:PUBLIC\Desktop\Battle.net.lnk"
+# Invoke-WebRequest -Uri "https://us.battle.net/download/getInstaller?os=win&installer=Battle.net-Setup.exe#/Battle.net-Setup.exe" -OutFile "Battle.net-Setup.exe"
+# .\Battle.net-Setup.exe -s /quiet
+# Remove-Item -Path "Battle.net-Setup.exe"
+# Remove-Item -Path "$env:PUBLIC\Desktop\Battle.net.lnk"
 
 <#
 # download the latest dll from https://github.com/Mourdraug/FanControl.AsusWMI/releases and place it in C:\Program Files\FanControl\Plugins
