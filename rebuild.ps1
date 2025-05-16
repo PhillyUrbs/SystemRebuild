@@ -21,7 +21,7 @@ $wingetApps = @(
     "Yealink.YealinkUSBConnect",
     #"9N4WGH0Z6VHQ", # Win11 HEVC Encoding (no longer working)
     # "9P1HQ5TQZMGD", # Microsoft Loop
-    "9NF8H0H7WMLT", #NVIDIA Control Panel
+    "9NF8H0H7WMLT", # NVIDIA Control Panel
     #"XP8K0HKJFRXGCK", # oh-my-posh
     "9PLDPG46G47Z", # Xbox Insider Hub
     "9NBLGGH30XJ3", # Xbox Accessories
@@ -30,7 +30,7 @@ $wingetApps = @(
 
 if ($architecture -eq 12) {
     Write-Output "ARM64 architecture detected. Adjusting settings for ARM64 laptop..."
-    $wingetApps = $wingetApps | Where-Object { $_ -notmatch "NVIDIA Control Panel|Valve.Steam|9NF8H0H7WMLT" }
+    $wingetApps = $wingetApps | Where-Object { $_ -notmatch "Valve.Steam|9NF8H0H7WMLT" }
 } elseif ($architecture -eq 9) {
     Write-Output "x64 architecture detected."
 } else {
@@ -85,6 +85,3 @@ reg add "HKLM\SOFTWARE\Policies\Microsoft\Edge\ExtensionInstallForcelist" /v "1"
 
 # Windows App point to SH environment
 reg add HKCU\Software\Microsoft\Windows365 /v Environment /t REG_DWORD /d 0
-
-
-
