@@ -1,0 +1,97 @@
+[
+  {
+    "Id": "Bitwarden.Bitwarden",
+    "Name": "Bitwarden",
+    "ExcludeOn": []
+  },
+  {
+    "Id": "Discord.Discord",
+    "Name": "Discord",
+    "ExcludeOn": []
+  },
+  {
+    "Id": "ElectronicArts.EADesktop",
+    "Name": "EA Desktop",
+    "ExcludeOn": ["Laptop", "ARM64"]
+  },
+  {
+    "Id": "EpicGames.EpicGamesLauncher",
+    "Name": "Epic Games",
+    "ExcludeOn": ["Laptop", "ARM64"]
+  },
+  {
+    "Id": "Git.Git",
+    "Name": "Git",
+    "ExcludeOn": []
+  },
+  {
+    "Id": "GOG.Galaxy",
+    "Name": "GOG Galaxy",
+    "ExcludeOn": ["Laptop", "ARM64"]
+  },
+  {
+    "Id": "Microsoft.BingWallpaper",
+    "Name": "Bing Wallpaper",
+    "ExcludeOn": []
+  },
+  {
+    "Id": "Microsoft.Office",
+    "Name": "Office",
+    "ExcludeOn": []
+  },
+  {
+    "Id": "Microsoft.PowerShell",
+    "Name": "PowerShell",
+    "ExcludeOn": []
+  },
+  {
+    "Id": "Microsoft.VisualStudioCode.Insiders",
+    "Name": "VS Code Insiders",
+    "ExcludeOn": []
+  },
+  {
+    "Id": "Plex.Plex",
+    "Name": "Plex",
+    "ExcludeOn": []
+  },
+  {
+    "Id": "Prusa3D.PrusaSlicer",
+    "Name": "Prusa Slicer",
+    "ExcludeOn": []
+  },
+  {
+    "Id": "Rem0o.FanControl",
+    "Name": "FanControl",
+    "ExcludeOn": ["Laptop"]
+  },
+  {
+    "Id": "Valve.Steam",
+    "Name": "Steam",
+    "ExcludeOn": ["ARM64"]
+  },
+  {
+    "Id": "Yealink.YealinkUSBConnect",
+    "Name": "Yealink USB Connect",
+    "ExcludeOn": ["Laptop"]
+  },
+  {
+    "Id": "9NF8H0H7WMLT",
+    "Name": "NVIDIA Control Panel",
+    "ExcludeOn": ["Laptop", "ARM64"]
+  },
+  {
+    "Id": "9PLDPG46G47Z",
+    "Name": "Xbox Insider Hub",
+    "ExcludeOn": ["ARM64"]
+  },
+  {
+    "Id": "9NBLGGH30XJ3",
+    "Name": "Xbox Accessories",
+    "ExcludeOn": ["ARM64"]
+  },
+  {
+    "Id": "9N1F85V9T8BN",
+    "Name": "Windows App",
+    "ExcludeOn": []
+  }
+]
