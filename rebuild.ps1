@@ -73,6 +73,18 @@ try {
     Write-Warning "❌ Failed to enable Hotpatching: $_"
 }
 
+# === Communication Device Control ===
+try {
+    $updatePath = "HKCU:\Software\Microsoft\Multimedia\Audio"
+    if (-not (Test-Path $updatePath)) {
+        New-Item -Path $updatePath -Force | Out-Null
+    }
+    New-ItemProperty -Path $updatePath -Name "UserDuckingPreference" -PropertyType DWord -Value 3 -Force | Out-Null
+    Write-Host "✅ Communication Device Control"
+} catch {
+    Write-Warning "❌ Communication Device Control: $_"
+}
+
 # === BypassPaywall Extension for Edge ===
 try {
     reg add "HKLM\SOFTWARE\Policies\Microsoft\Edge\ExtensionInstallAllowlist" /v "1" /t REG_SZ /d "lkbebcjgcmobigpeffafkodonchffocl" /f | Out-Null
@@ -130,3 +142,4 @@ try {
 }
 
 Write-Host "`n🔄 A system reboot is recommended for all changes to take effect."
+
